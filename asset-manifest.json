@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-08T05:43:32.679082+00:00",
-  "sourceMasterSHA256": "98a978160c6456fe54482c021d8f01eeaa7409206ee9c7bf63f7f6b57939f580",
-  "regionsReady": 19,
-  "settlements": 106,
+  "updatedAt": "2026-10-08T06:26:06.544349+00:00",
+  "sourceMasterSHA256": "60617e290d7d43531da37a655547eecce06d0cb0a6cb2f14b031140da1012401",
+  "regionsReady": 20,
+  "settlements": 122,
   "placesTotal": 166,
   "assets": [
     {
       "path": "assets/ardolet-pilot.png",
-      "bytes": 15963111,
-      "sha256": "ecf6543c2141ac3c9fa5cf61f766871442dfa55857f9f856af9a988538b38d89"
+      "bytes": 15963318,
+      "sha256": "feafc1cf5ea9acd1d0664b9790877b6cc69522caf88e3f6ea8f064f6868ddb35"
     },
     {
       "path": "assets/armartor-detail-a.png",
@@ -54,6 +54,11 @@
       "path": "assets/capital-west-road-a.png",
       "bytes": 2858379,
       "sha256": "e35cb1b464fd3269a9c10f41021d44a2580558ad62ec3defbc2bde74a0593f0c"
+    },
+    {
+      "path": "assets/dragonspire-pilot.png",
+      "bytes": 9559876,
+      "sha256": "6f890471accad535dc838307eb23ee365b2f4757e476d5a7df711fc27d17591a"
     },
     {
       "path": "assets/east-ledge-pass-a.png",
@@ -141,6 +146,11 @@
       "sha256": "0006ed15122fc5a68337b686d6741f40b196b900bc0a7378e8e2bbc5c6b3c090"
     },
     {
+      "path": "assets/imported/map-a/00e36d325ca1-mevhesbek-v1.png",
+      "bytes": 3774110,
+      "sha256": "00e36d325ca1cefc11268676704a88f9d5a64a60f543a46e7f6663d29027b8ee"
+    },
+    {
       "path": "assets/imported/map-a/0ae678c9348c-radarhal-court-district-v1.png",
       "bytes": 4205387,
       "sha256": "0ae678c9348c58e88b778b27f3b129e23475313b7203a6926691a83eab4e1314"
@@ -159,6 +169,11 @@
       "path": "assets/imported/map-a/3a421c3d722d-hesphukum-v1.png",
       "bytes": 4202920,
       "sha256": "3a421c3d722d32ebad9184fd9b76f4a82f80ccff603a8114fe2729cc2e7ab17d"
+    },
+    {
+      "path": "assets/imported/map-a/3ef42a2b51fa-narhal-v1.png",
+      "bytes": 3759429,
+      "sha256": "3ef42a2b51fa7135dc37bf12c7979c50213b26e04eb65875bf822c95fd90f138"
     },
     {
       "path": "assets/imported/map-a/4baa1d718313-paltekumga-v2.png",
@@ -231,6 +246,16 @@
       "sha256": "b82af1b66259f4148462d15cb6d44d46ff292f60cce34a38c16fcb12822c3c45"
     },
     {
+      "path": "assets/imported/map-a/bc89cc0e39b9-hesnarga-v1.png",
+      "bytes": 3453322,
+      "sha256": "bc89cc0e39b9d842175f0ae83813fe4216c02627d740ec3e69269bc124d5877d"
+    },
+    {
+      "path": "assets/imported/map-a/bd972138c179-pukhesga-v1.png",
+      "bytes": 3761912,
+      "sha256": "bd972138c179b531bcd785511c15ff362738e11528b7ba5374fe617afc3e241f"
+    },
+    {
       "path": "assets/imported/map-a/c9e5727e0bd3-hedrenga-v1.png",
       "bytes": 3765145,
       "sha256": "c9e5727e0bd315f366cf59aceb58f4b9e5e15fb5f502f32dc36a56af3e320822"
@@ -261,6 +286,11 @@
       "sha256": "e06e8b9b2f57aef7a6a52fb8bee04d1e88a476097fc0c39f7640868b111ef3aa"
     },
     {
+      "path": "assets/imported/map-a/e77d2129b6d8-mevhesga-v1.png",
+      "bytes": 3606156,
+      "sha256": "e77d2129b6d8df29b8a3f7acac728d6f15ae1061ce5d582d9350568e3441adc6"
+    },
+    {
       "path": "assets/imported/map-a/ece2c04afeb3-remkelga-v1.png",
       "bytes": 4034249,
       "sha256": "ece2c04afeb35841bfeef07ce16313cdffe973a37853b02c86a59bb19b832d30"
@@ -284,6 +314,11 @@
       "path": "assets/imported/map-b/12b3c1bca0cf-dorkar-city-a.png",
       "bytes": 4742896,
       "sha256": "12b3c1bca0cfbbbb092d533124d700ef023a72d195f064e1ce6076be667fac1d"
+    },
+    {
+      "path": "assets/imported/map-b/144f834d7546-garsenga-village-a.png",
+      "bytes": 4544534,
+      "sha256": "144f834d7546b0cd57aa448d31bce6e91b75957bdd7405288c449d83978bf655"
     },
     {
       "path": "assets/imported/map-b/153bf9d90bbf-dortekum-city-a.png",
@@ -356,6 +391,11 @@
       "sha256": "9c5b7ca7c68c58255eda62e2a10214316825a4dd4315316647002e0398078e74"
     },
     {
+      "path": "assets/imported/map-b/9d13f2dca208-beltekga-village-a.png",
+      "bytes": 4480362,
+      "sha256": "9d13f2dca2083ad30f9ddbfa9cbc1bf0716770732df125fe6ac30d045bb553e0"
+    },
+    {
       "path": "assets/imported/map-b/9df0db870b3c-bekdoret-living-sector-a.png",
       "bytes": 4549853,
       "sha256": "9df0db870b3c52487ace160ed98684d410d6179bf13de05dbc391805dae31292"
@@ -391,6 +431,16 @@
       "sha256": "bbee87e20cd31edc1714ba2fa4389b51bd1cc3961f3c97257f4a038641be38e1"
     },
     {
+      "path": "assets/imported/map-b/ce451518649a-belnabga-village-a.png",
+      "bytes": 4533819,
+      "sha256": "ce451518649a2eb7db2643a610130545749cc5a69d57e145ed4c22fb83136439"
+    },
+    {
+      "path": "assets/imported/map-b/d03e5c394415-senpukga-village-a.png",
+      "bytes": 4680430,
+      "sha256": "d03e5c394415eeb5ed4410b1881d1f793a801a943a7b781a1212cfd3527e5f30"
+    },
+    {
       "path": "assets/imported/map-b/d4a21e359f1d-senpuket-city-a.png",
       "bytes": 4669149,
       "sha256": "d4a21e359f1d44bcad394794edc654ee65feea6b3e6d7f7a7898f1271667e851"
@@ -414,6 +464,11 @@
       "path": "assets/imported/map-b/f3b301eb945f-bekhal-supply-access-a.png",
       "bytes": 3935070,
       "sha256": "f3b301eb945fcc6227a842b1dd0b7ebdebb31e69a20eef9b276e5071148e131a"
+    },
+    {
+      "path": "assets/imported/map-c/036db909368a-narbektor-a.png",
+      "bytes": 3554365,
+      "sha256": "036db909368a17e6ecdf44c9b2380b29edead72ba53ddd67e51ff13945639d73"
     },
     {
       "path": "assets/imported/map-c/07c2b2826947-markelmir-quay-insurance-a.png",
@@ -491,6 +546,11 @@
       "sha256": "5cb8e4751524ab24c3a4bcc129dfe16ac8ae0f38b34fe3b5b2b1b7afcd282f08"
     },
     {
+      "path": "assets/imported/map-c/5df7261f7766-narmosga-a.png",
+      "bytes": 4035932,
+      "sha256": "5df7261f77663280850edc1df1a5d635a0caa79d158df42ca6e2b98faccd9869"
+    },
+    {
       "path": "assets/imported/map-c/6542a3fe3324-belmebga-a.png",
       "bytes": 4432611,
       "sha256": "6542a3fe33247b71f17e1e4868440e225fef1a23c119e2fc827deee18588cee7"
@@ -536,6 +596,16 @@
       "sha256": "921df01f5bbb700c29a6be151359a4097e5faf2a20115cc0291a44feedbf191c"
     },
     {
+      "path": "assets/imported/map-c/9856fc746144-narperga-a.png",
+      "bytes": 3612529,
+      "sha256": "9856fc7461449ce0b0be3329190eb19714cae3270b26f2f2a20db06b6ba4d5d0"
+    },
+    {
+      "path": "assets/imported/map-c/9a429cd6461e-marnarga-a.png",
+      "bytes": 4152940,
+      "sha256": "9a429cd6461efbe06f1913bb3d3061bfd49bf60e91b4ef3ba855fd7e6c9575cb"
+    },
+    {
       "path": "assets/imported/map-c/9b611360827c-silmerga-a.png",
       "bytes": 4317910,
       "sha256": "9b611360827c4e0b32d00a638af20022e7aba9524206a9ba8209ce99ad819586"
@@ -576,6 +646,11 @@
       "sha256": "cf702eb3298982047c274354f955e3b6d0f7c07f6f7386f758f5d7fd8147016e"
     },
     {
+      "path": "assets/imported/map-c/d42a5ac20c00-narmarlenum-a.png",
+      "bytes": 3254265,
+      "sha256": "d42a5ac20c0038c22871f86c24a343de7ed1746864b9d2c7e37e29e624de6cce"
+    },
+    {
       "path": "assets/imported/map-c/d7420b50b593-silsorga-a.png",
       "bytes": 4374168,
       "sha256": "d7420b50b59313cd6167ffd7c4b8404440e585cc79eacd96d4b68b9d39fe3f63"
@@ -596,6 +671,11 @@
       "sha256": "e4b7c25a80d3d1c85ec8a40b6e0655058b1fedaf8968bcc1d661f213a54ac48e"
     },
     {
+      "path": "assets/imported/map-c/e65fe040de13-marmoshal-a.png",
+      "bytes": 4159650,
+      "sha256": "e65fe040de135b739a6a814c43b2935c8e2b0d05640dc92ae58b175769d7edc3"
+    },
+    {
       "path": "assets/imported/map-c/e808d2dfd57f-bellambar-a.png",
       "bytes": 4318987,
       "sha256": "e808d2dfd57f2fc58af61421f0c4cd3168e762ca8a888ff9f60b65fd7195d6f8"
@@ -609,6 +689,11 @@
       "path": "assets/imported/map-c/efe7302dbcfb-workbar-administration-b.png",
       "bytes": 4172527,
       "sha256": "efe7302dbcfbfce4021b8bb5ec3bb43310c9717a78b31407b557ba3f5e0af5b3"
+    },
+    {
+      "path": "assets/imported/map-c/f2fd380cb340-narmarkel-a.png",
+      "bytes": 3552806,
+      "sha256": "f2fd380cb340fb81d1b42617262b9b1ed6cc6e2485700187f245b7477b1a2f27"
     },
     {
       "path": "assets/imported/map-c/f46189bb6dd6-silsorkel-a.png",
@@ -702,13 +787,13 @@
     },
     {
       "path": "assets/nimsolet-pilot.png",
-      "bytes": 12141664,
-      "sha256": "99e9549c2bc2ad4b733b565453649e1e2f94a276104c892884b605b13020a402"
+      "bytes": 12141831,
+      "sha256": "cf31ce47a510b83a00ade06ad4580f2be7ebadbfb5d2b8159c464d4f281afbf7"
     },
     {
       "path": "assets/norghard-pilot.png",
-      "bytes": 13759634,
-      "sha256": "24fe898819d810c20179e49a29654403904fbad389487249a225199c7e30b905"
+      "bytes": 13767362,
+      "sha256": "025e6fff252aa8c227c4c9df78e56729166a2f7af3eae1fabade0263a85e28d8"
     },
     {
       "path": "assets/norghard-port-core-connections-a.png",
@@ -747,8 +832,8 @@
     },
     {
       "path": "assets/silhalet-pilot.png",
-      "bytes": 11917796,
-      "sha256": "db230a8e81bd931f756b472e54c47498e904c3c20d11731c74a07cdd445d39eb"
+      "bytes": 11917984,
+      "sha256": "74d67d37e4f5ce63b5e4421ba235249d09e46ddc816d920f7f07337ae44a497c"
     },
     {
       "path": "assets/silnimet-pilot.png",
@@ -812,8 +897,8 @@
     },
     {
       "path": "assets/world-pilot.png",
-      "bytes": 7839596,
-      "sha256": "7adf87dc18974096a521c843205925f97be12acab9e1c74c50603d30e3e72dae"
+      "bytes": 7839622,
+      "sha256": "f1483da8ef6820d97fc95caf7841b4dd435cb369bf3c1630a5b0af7759de3a0b"
     },
     {
       "path": "assets/yenmebet-pilot.png",
