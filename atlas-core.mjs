@@ -38,8 +38,9 @@ export function createNavigator(maps){
  return {
   current:()=>copy(state),
   update:patch=>{for(const key of ['zoom','center','labels','selected'])if(key in patch)state[key]=copy(patch[key]);},
-  enter:id=>{const m=byId.get(id),linked=state.accessLinks?.some(link=>link.detailMapId===id);if(!m||(!linked&&m.parentMapId!==state.id)||m.status!=='ready'||!m.asset)return false;stack.push(copy(state));state=fresh(id);return true;},
+  enter:id=>{const m=byId.get(id),linked=state.accessLinks?.some(link=>link.detailMapId===id)||state.linkedSelectionTargets?.some(target=>target.mapId===id);if(!m||(!linked&&m.parentMapId!==state.id)||m.status!=='ready'||!m.asset)return false;stack.push(copy(state));state=fresh(id);return true;},
   back:()=>{if(!stack.length)return false;state=stack.pop();return true;},
   breadcrumb:()=>[...stack.map(copy),copy(state)]
  };
 }
+export function mapAssetURL(map){return map.assetRevision?`${map.asset}?v=${encodeURIComponent(map.assetRevision)}`:map.asset;}

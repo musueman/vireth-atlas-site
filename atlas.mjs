@@ -1,7 +1,7 @@
-import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer} from './atlas-core.mjs?v=20261008-access-links';
+import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=ad3d0b8e17de9963';
 const $=id=>document.getElementById(id),ns='http://www.w3.org/2000/svg';
-const data=await fetch('data/facility-master.json').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});
-$('production-status').textContent=`${data.maps.filter(m=>m.kind==='region'&&m.status==='ready').length}권역 ${data.maps.filter(m=>m.kind==='settlement').length}거점 · 전국 확장 중`;
+const data=await fetch('data/facility-master.json?v=ad3d0b8e17de9963').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});
+$('production-status').textContent=`${data.maps.filter(m=>m.kind==='region'&&m.status==='ready').length}권역 ${data.maps.filter(m=>m.kind==='settlement'&&m.status==='ready').length}거점`;
 for(const stage of data.campaign.stages){const option=document.createElement('option');option.value=stage.id;option.textContent=stage.label;$('campaign-stage').append(option);}
 const nav=createNavigator(data.maps),map=$('map'),viewport=$('viewport');let depth=0,drag=null,ignoreClick=false;
 const initialPath=entryPath(data.maps,location.hash.slice(1));
@@ -21,7 +21,7 @@ function interactive(node,id,name){node.setAttribute('tabindex','0');node.setAtt
 function label(x,y,text,size){return el('text',{x,y,'font-size':size,'stroke-width':size*.16,class:'map-label'},text);}
 function render(){
  const s=nav.current(),b=s.bounds;map.replaceChildren();map.setAttribute('aria-label',s.name+' 지도');map.dataset.mapId=s.id;map.dataset.asset=s.asset;
- const image=el('image',{href:s.asset,x:b[0],y:b[1],width:b[2],height:b[3],preserveAspectRatio:'none'});$('loading').hidden=false;image.addEventListener('load',()=>{$('loading').hidden=true;});image.addEventListener('error',()=>{$('loading').textContent='그림을 불러오지 못했습니다. 새로고침해 주세요.';});map.append(image);
+ const image=el('image',{href:mapAssetURL(s),x:b[0],y:b[1],width:b[2],height:b[3],preserveAspectRatio:'none'});$('loading').hidden=false;image.addEventListener('load',()=>{$('loading').hidden=true;});image.addEventListener('error',()=>{$('loading').textContent='그림을 불러오지 못했습니다. 새로고침해 주세요.';});map.append(image);
  const fit=metrics().fit,fs=13/fit;
  for(const link of s.accessLinks||[]){
   const target=data.maps.find(m=>m.id===link.detailMapId),p=link.worldAnchor;if(!target||!p)continue;
@@ -29,10 +29,18 @@ function render(){
   if(s.labels)map.append(label(p[0]+8/fit,p[1]-8/fit,link.name||data.places.find(v=>v.id===link.placeId)?.name||target.name,fs));
  }
  for(const child of data.maps.filter(m=>m.parentMapId===s.id)){
+  if(child.navigationListOnly)continue;
   let shape;if(child.geometry)shape=el('path',{d:polygonPath(child.geometry),'fill-rule':'evenodd'});else if(child.clickPolygon)shape=el('polygon',{points:child.clickPolygon.map(p=>p.join(',')).join(' ')});else continue;
   if(child.geographicSelection){const outline=shape.cloneNode(false);outline.setAttribute('class','geographic-outline');outline.setAttribute('aria-hidden','true');map.append(outline);}
   shape.setAttribute('class','division '+(child.kind==='region'&&child.sovereign?'':'detail ')+(child.geographicSelection?'geographic-selection ':'')+(child.status==='ready'?'':'planned'));interactive(shape,child.id,child.name+(child.sovereign===false?' 비주권 탐색 구획':'')+(child.status==='ready'?' 상세지도 열기':' · 준비 중'));map.append(shape);
   if(s.labels){const c=child.bounds;const x=child.kind==='region'?c[0]+c[2]*.45:child.clickPolygon.reduce((a,p)=>a+p[0],0)/child.clickPolygon.length;const y=child.kind==='region'?c[1]+c[3]*.48:Math.min(...child.clickPolygon.map(p=>p[1]))-fs*.3;const displayName=s.kind==='region'&&child.kind==='settlement'?(data.places.find(p=>p.id===child.placeId)?.name||child.name):child.name;const t=label(x,y,displayName,fs);t.dataset.priority=child.status==='ready'?'1':'0';t.setAttribute('text-anchor','middle');map.append(t);}
+ }
+ for(const reference of s.linkedSelectionTargets||[]){
+  const target=data.maps.find(m=>m.id===reference.mapId);if(!target||target.status!=='ready')continue;
+  const shape=el('polygon',{points:reference.polygon.map(p=>p.join(',')).join(' '),class:'division detail geographic-selection'});
+  const outline=shape.cloneNode(false);outline.setAttribute('class','geographic-outline');outline.setAttribute('aria-hidden','true');map.append(outline);
+  interactive(shape,target.id,target.name+' 상세지도 열기');map.append(shape);
+  if(s.labels){const x=reference.polygon.reduce((sum,p)=>sum+p[0],0)/reference.polygon.length,y=Math.min(...reference.polygon.map(p=>p[1]))-fs*.3;const t=label(x,y,data.places.find(p=>p.id===target.placeId)?.name||target.name,fs);t.dataset.priority='1';t.setAttribute('text-anchor','middle');map.append(t);}
  }
  const overviewPatches=(data.overviewDrawings||[]).filter(d=>d.parentMapId===s.id).flatMap(d=>d.patches);
  const overviewLinkedPlaces=new Set(overviewPatches.filter(p=>p.detailMapId).map(p=>p.placeId));
@@ -52,7 +60,7 @@ function render(){
   if(!p||data.maps.some(m=>m.parentMapId===s.id&&m.placeId===p.id))continue;
   const uv=rep.imagePoint||rep.artworkAnchor||[rep.artworkPosition.u,rep.artworkPosition.v],pos=localToWorld(uv,b);
   const dot=el('circle',{cx:pos[0],cy:pos[1],r:4/fit,class:'spot',tabindex:0,role:'button','aria-label':p.name+' 개요 정보'});
-  const select=()=>showNote(p.name+' · '+p.rationale+' / 이 화면은 생활권 개요이며 개별 상세 원화는 제작 중입니다.');
+  const select=()=>showNote(p.name+' · '+p.rationale+' / 생활권 개요의 위치 표시입니다. 개별 상세 지도는 장소 찾기에서 열 수 있습니다.');
   dot.append(el('title',{},p.name));dot.addEventListener('click',select);dot.addEventListener('keydown',e=>{if(e.key==='Enter')select();});map.append(dot);
   if(s.labels)map.append(label(pos[0]+5/fit,pos[1]-7/fit,p.name,fs));
  }
@@ -87,7 +95,7 @@ function destinations(){const s=nav.current(),q=$('search').value.trim().toLocal
  $('list-title').textContent=s.kind==='settlement'?'시설·생활 공간':'다음 상세도';
  if(s.kind==='settlement'||s.kind==='district'){for(const child of data.maps.filter(m=>m.parentMapId===s.id))$('destinations').append(destinationButton(child.name,'상세 구획',()=>open(child.id)));for(const f of representedFeatures(s))$('destinations').append(destinationButton(f.name,'위치',()=>selectFeature(f)));if(s.kind==='district')$('list-title').textContent='시설과 출입 동선';if(s.id==='silverkeep-civic'){const note=document.createElement('p');note.textContent='금색: 마차 접근 · 청록 점선: 보행. 광장 승하차 후 법정 계단은 걸어서 이동합니다. 지명을 끄면 동선 표시도 숨깁니다.';$('destinations').append(note);}}
  else if(s.kind==='campaign'){$('list-title').textContent='협곡과 전황';$('destinations').textContent='북쪽 좁은목 → 중앙 골짜기 → 남쪽 접근로. 위 전황 선택기에서 사건 단계를 바꿀 수 있습니다. 부대의 정확한 봉쇄 수단과 듀란의 탈출 경로는 정해지지 않았습니다.';}
- else if(s.kind==='pass'){$('list-title').textContent=s.accessLinks?.length?'연결된 상세도':'도로 설계 검토';const note=document.createElement('p');note.textContent=s.id==='hesmarga-geographic-access'?'수레는 상부 환적장에서 멈춥니다. 계단은 인력 운반, 아래 부두의 경사로는 국소 운반 동선입니다.':s.description;$('destinations').append(note);for(const link of s.accessLinks||[]){const target=data.maps.find(m=>m.id===link.detailMapId);if(target)$('destinations').append(destinationButton(target.name,'접근점',()=>open(target.id)));}}else for(const child of data.maps.filter(m=>m.parentMapId===s.id))$('destinations').append(destinationButton(child.name,child.status==='ready'?'열기':'준비 중',()=>open(child.id)));
+ else if(s.kind==='pass'){$('list-title').textContent=s.accessLinks?.length?'연결된 상세도':'도로 설계 검토';const note=document.createElement('p');note.textContent=s.id==='hesmarga-geographic-access'?'수레는 상부 환적장에서 멈춥니다. 계단은 인력 운반, 아래 부두의 경사로는 국소 운반 동선입니다.':s.description;$('destinations').append(note);for(const link of s.accessLinks||[]){const target=data.maps.find(m=>m.id===link.detailMapId);if(target)$('destinations').append(destinationButton(target.name,'접근점',()=>open(target.id)));}}else {for(const child of data.maps.filter(m=>m.parentMapId===s.id))$('destinations').append(destinationButton(child.name,child.status==='ready'?'열기':'준비 중',()=>open(child.id)));for(const reference of s.linkedSelectionTargets||[]){const target=data.maps.find(m=>m.id===reference.mapId);if(target)$('destinations').append(destinationButton(target.name,'열기',()=>open(target.id)));}}
 }
 function zoom(factor){const s=nav.current();nav.update({zoom:Math.max(1,Math.min(metrics().max,s.zoom*factor))});camera();}
 const fit=()=>{const s=nav.current(),b=s.bounds;nav.update({zoom:1,center:[b[0]+b[2]/2,b[1]+b[3]/2]});camera();};

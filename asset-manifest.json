@@ -1,907 +1,1807 @@
 {
-  "updatedAt": "2026-10-08T06:26:06.544349+00:00",
-  "sourceMasterSHA256": "60617e290d7d43531da37a655547eecce06d0cb0a6cb2f14b031140da1012401",
+  "updatedAt": "2026-10-08T12:21:46.666759+00:00",
+  "sourceMasterSHA256": "ad3d0b8e17de99631f099edf91e6913558e54c1f4e039cf6cc758c22101c4201",
   "regionsReady": 20,
-  "settlements": 122,
+  "settlements": 166,
   "placesTotal": 166,
   "assets": [
     {
       "path": "assets/ardolet-pilot.png",
-      "bytes": 15963318,
-      "sha256": "feafc1cf5ea9acd1d0664b9790877b6cc69522caf88e3f6ea8f064f6868ddb35"
+      "storage": "site",
+      "storagePath": "assets/ardolet-pilot.png",
+      "url": "assets/ardolet-pilot.png",
+      "bytes": 15961703,
+      "sha256": "9e1c90d5ef6eacb7d0d0191956de272f801dc2cf8be08b753be60905d9f0cd88"
     },
     {
       "path": "assets/armartor-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/c8e5922fe647f0b50c3219218ee014bb40e3b268994a6d8521eae8392f022101.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/c8e5922fe647f0b50c3219218ee014bb40e3b268994a6d8521eae8392f022101.png",
       "bytes": 3131221,
       "sha256": "c8e5922fe647f0b50c3219218ee014bb40e3b268994a6d8521eae8392f022101"
     },
     {
       "path": "assets/bekbepga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/72e867fe7cad5314b96e2ce39cd6614a42d5f256ee138fa4c1458a5fc6c14132.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/72e867fe7cad5314b96e2ce39cd6614a42d5f256ee138fa4c1458a5fc6c14132.png",
       "bytes": 3083889,
       "sha256": "72e867fe7cad5314b96e2ce39cd6614a42d5f256ee138fa4c1458a5fc6c14132"
     },
     {
       "path": "assets/bekdoret-pilot.png",
-      "bytes": 12389453,
-      "sha256": "6c445e52cf87f0bc42e49ffb699054326d085a6c1dd4dd0a0a7cc3480ea05b26"
+      "storage": "site",
+      "storagePath": "assets/bekdoret-pilot.png",
+      "url": "assets/bekdoret-pilot.png",
+      "bytes": 12424505,
+      "sha256": "916ff97389cc044d352162c9038a0ebb278655b24a64d5eadc29dd8735e2c888"
     },
     {
       "path": "assets/bellelga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/618f6b221112c68b6effc5ed83619c93b361c5cf6d8e466e0362b4f38a427a34.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/618f6b221112c68b6effc5ed83619c93b361c5cf6d8e466e0362b4f38a427a34.png",
       "bytes": 3299762,
       "sha256": "618f6b221112c68b6effc5ed83619c93b361c5cf6d8e466e0362b4f38a427a34"
     },
     {
       "path": "assets/belsorel-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/56ad821624ccf0c7aab589e49da79622e23add32e93c83be947a8c8428084030.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/56ad821624ccf0c7aab589e49da79622e23add32e93c83be947a8c8428084030.png",
       "bytes": 3266368,
       "sha256": "56ad821624ccf0c7aab589e49da79622e23add32e93c83be947a8c8428084030"
     },
     {
       "path": "assets/capital-east-road-a.png",
+      "storage": "site",
+      "storagePath": "assets/capital-east-road-a.png",
+      "url": "assets/capital-east-road-a.png",
       "bytes": 3240133,
       "sha256": "eeb655786969f83f6164c52e614eeea6f2102732b3cd28c7a1d46e306f08c42a"
     },
     {
       "path": "assets/capital-observatory-road-a.png",
+      "storage": "site",
+      "storagePath": "assets/capital-observatory-road-a.png",
+      "url": "assets/capital-observatory-road-a.png",
       "bytes": 3259952,
       "sha256": "bd0872e781a346ee2f08036d9bcd43ad962093890932d87c0e97d9996a3990c0"
     },
     {
       "path": "assets/capital-south-road-a.png",
+      "storage": "site",
+      "storagePath": "assets/capital-south-road-a.png",
+      "url": "assets/capital-south-road-a.png",
       "bytes": 3132758,
       "sha256": "0240759c6bdd55e77379c98ae5b60b01461bfe38bc82d08cc77ecdf0be1d9bfc"
     },
     {
       "path": "assets/capital-west-road-a.png",
+      "storage": "site",
+      "storagePath": "assets/capital-west-road-a.png",
+      "url": "assets/capital-west-road-a.png",
       "bytes": 2858379,
       "sha256": "e35cb1b464fd3269a9c10f41021d44a2580558ad62ec3defbc2bde74a0593f0c"
     },
     {
       "path": "assets/dragonspire-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/dragonspire-pilot.png",
+      "url": "assets/dragonspire-pilot.png",
       "bytes": 9559876,
       "sha256": "6f890471accad535dc838307eb23ee365b2f4757e476d5a7df711fc27d17591a"
     },
     {
       "path": "assets/east-ledge-pass-a.png",
+      "storage": "site",
+      "storagePath": "assets/east-ledge-pass-a.png",
+      "url": "assets/east-ledge-pass-a.png",
       "bytes": 3106629,
       "sha256": "8044c3b6087502b4135b61702b001f3a500cf1ea2ac71426edde7942520686d1"
     },
     {
       "path": "assets/fenrir-eye-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/fenrir-eye-pilot.png",
+      "url": "assets/fenrir-eye-pilot.png",
       "bytes": 15323014,
       "sha256": "ae2b542349652bbb73c961eda633b572aecb1da18e63b682fcc88bece27b5c5d"
     },
     {
       "path": "assets/forest-pair-connections-a.png",
+      "storage": "site",
+      "storagePath": "assets/forest-pair-connections-a.png",
+      "url": "assets/forest-pair-connections-a.png",
       "bytes": 3403437,
       "sha256": "b4856c08a8eb3c50d60508fc281702440af34158010a6b4a6a0c304b46b0ec2c"
     },
     {
       "path": "assets/garmebet-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/9fece40c7301cf10926735a81663dc3d6b2d8adca0cbfc2ff4a8073bafa494d4.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/9fece40c7301cf10926735a81663dc3d6b2d8adca0cbfc2ff4a8073bafa494d4.png",
       "bytes": 3354564,
       "sha256": "9fece40c7301cf10926735a81663dc3d6b2d8adca0cbfc2ff4a8073bafa494d4"
     },
     {
       "path": "assets/garmebet-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/garmebet-pilot.png",
+      "url": "assets/garmebet-pilot.png",
       "bytes": 7182440,
       "sha256": "0d8b44927642241c41ed69922088ebdd0365c990267b55fd9ffdc0912fb71322"
     },
     {
       "path": "assets/garpukga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/6207fd1b9ebc6fb9dace1ea78c78a9a66e214003de19c1455ea439609da588e6.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6207fd1b9ebc6fb9dace1ea78c78a9a66e214003de19c1455ea439609da588e6.png",
       "bytes": 3419117,
       "sha256": "6207fd1b9ebc6fb9dace1ea78c78a9a66e214003de19c1455ea439609da588e6"
     },
     {
       "path": "assets/grain-pair-connections-a.png",
+      "storage": "site",
+      "storagePath": "assets/grain-pair-connections-a.png",
+      "url": "assets/grain-pair-connections-a.png",
       "bytes": 3680583,
       "sha256": "3f8ae6bd7da942c552322da7213e12fef71f48b748c39ab49a0370cd79090552"
     },
     {
       "path": "assets/greenhallow-basin-connections-a.png",
+      "storage": "site",
+      "storagePath": "assets/greenhallow-basin-connections-a.png",
+      "url": "assets/greenhallow-basin-connections-a.png",
       "bytes": 3543326,
       "sha256": "b3911f1261bf507e9daccbca9dcd96fbd373e063e76c0c1076f2bc306970e208"
     },
     {
       "path": "assets/greenhallow-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/6f198153902a5dcb081ff6c2b31423031ba26f1713c6b8d61179133f051adef1.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6f198153902a5dcb081ff6c2b31423031ba26f1713c6b8d61179133f051adef1.png",
       "bytes": 3126588,
       "sha256": "6f198153902a5dcb081ff6c2b31423031ba26f1713c6b8d61179133f051adef1"
     },
     {
       "path": "assets/hekgarga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/bbd2cca8a20b7290cdf526a1aa63e18fc068d043be57d866e0fc67193b9c71c0.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/bbd2cca8a20b7290cdf526a1aa63e18fc068d043be57d866e0fc67193b9c71c0.png",
       "bytes": 2932980,
       "sha256": "bbd2cca8a20b7290cdf526a1aa63e18fc068d043be57d866e0fc67193b9c71c0"
     },
     {
       "path": "assets/hesbeket-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/hesbeket-pilot.png",
+      "url": "assets/hesbeket-pilot.png",
       "bytes": 6582156,
       "sha256": "97d7e70740cd3b6fcd0502b0c0e0afa3007986e2165d7fedf536300c34b5cb20"
     },
     {
       "path": "assets/hesferet-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/hesferet-pilot.png",
+      "url": "assets/hesferet-pilot.png",
       "bytes": 12825751,
       "sha256": "c55ab818ac1712108252e688bf6bc04955f878692187ffe2c5cf7501ff48ae1c"
     },
     {
       "path": "assets/hesmarga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/edbb5a144aafb3a05638ed0e28ce294f700fc6f570fda1e09038063b2b292b52.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/edbb5a144aafb3a05638ed0e28ce294f700fc6f570fda1e09038063b2b292b52.png",
       "bytes": 3334192,
       "sha256": "edbb5a144aafb3a05638ed0e28ce294f700fc6f570fda1e09038063b2b292b52"
     },
     {
       "path": "assets/hesmarga-geographic-access-joined.png",
+      "storage": "site",
+      "storagePath": "assets/hesmarga-geographic-access-joined.png",
+      "url": "assets/hesmarga-geographic-access-joined.png",
       "bytes": 5247471,
       "sha256": "cf196285526a6c2e626b21694332b902454ee69427e761a51b7e1471866a1f87"
     },
     {
       "path": "assets/hesmarga-shore-a.png",
+      "storage": "site",
+      "storagePath": "assets/hesmarga-shore-a.png",
+      "url": "assets/hesmarga-shore-a.png",
       "bytes": 4205204,
       "sha256": "644bf0af5206164d5a4b678b3fbac3f741862f0eefab7994295bfd3e7748354e"
     },
     {
       "path": "assets/ieltor-ga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/1859a6c4e6cff8fb695332c5e5dbfa382d94db976119804557d2804cec16a41f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/1859a6c4e6cff8fb695332c5e5dbfa382d94db976119804557d2804cec16a41f.png",
       "bytes": 3410942,
       "sha256": "1859a6c4e6cff8fb695332c5e5dbfa382d94db976119804557d2804cec16a41f"
     },
     {
       "path": "assets/imported/map-a/0006ed15122f-paltekga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/0006ed15122fc5a68337b686d6741f40b196b900bc0a7378e8e2bbc5c6b3c090.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/0006ed15122fc5a68337b686d6741f40b196b900bc0a7378e8e2bbc5c6b3c090.png",
       "bytes": 4671011,
       "sha256": "0006ed15122fc5a68337b686d6741f40b196b900bc0a7378e8e2bbc5c6b3c090"
     },
     {
       "path": "assets/imported/map-a/00e36d325ca1-mevhesbek-v1.png",
+      "storage": "media",
+      "storagePath": "assets/00e36d325ca1cefc11268676704a88f9d5a64a60f543a46e7f6663d29027b8ee.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/00e36d325ca1cefc11268676704a88f9d5a64a60f543a46e7f6663d29027b8ee.png",
       "bytes": 3774110,
       "sha256": "00e36d325ca1cefc11268676704a88f9d5a64a60f543a46e7f6663d29027b8ee"
     },
     {
       "path": "assets/imported/map-a/0ae678c9348c-radarhal-court-district-v1.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-a/0ae678c9348c-radarhal-court-district-v1.png",
+      "url": "assets/imported/map-a/0ae678c9348c-radarhal-court-district-v1.png",
       "bytes": 4205387,
       "sha256": "0ae678c9348c58e88b778b27f3b129e23475313b7203a6926691a83eab4e1314"
     },
     {
+      "path": "assets/imported/map-a/1066965459f5-dunnavrenum-v1.png",
+      "storage": "media",
+      "storagePath": "assets/1066965459f51abb42033035b66c594366721bca235496180dd812ec7ebbd92f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/1066965459f51abb42033035b66c594366721bca235496180dd812ec7ebbd92f.png",
+      "bytes": 4047836,
+      "sha256": "1066965459f51abb42033035b66c594366721bca235496180dd812ec7ebbd92f"
+    },
+    {
+      "path": "assets/imported/map-a/114366914fc9-duntorga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/114366914fc9a19dbb4058d93483bfb47d8cce1e5f6d604bd7db44571b7625de.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/114366914fc9a19dbb4058d93483bfb47d8cce1e5f6d604bd7db44571b7625de.png",
+      "bytes": 3784634,
+      "sha256": "114366914fc9a19dbb4058d93483bfb47d8cce1e5f6d604bd7db44571b7625de"
+    },
+    {
+      "path": "assets/imported/map-a/1b622e444de3-ummarsor-v1.png",
+      "storage": "media",
+      "storagePath": "assets/1b622e444de3b887d5408f5687dbdc641c5ebfa961f7c23cfa47f823c13e7190.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/1b622e444de3b887d5408f5687dbdc641c5ebfa961f7c23cfa47f823c13e7190.png",
+      "bytes": 3694151,
+      "sha256": "1b622e444de3b887d5408f5687dbdc641c5ebfa961f7c23cfa47f823c13e7190"
+    },
+    {
+      "path": "assets/imported/map-a/28866f5ce068-linsantekga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/28866f5ce06893b5f249fac8129e305a2e38ad1eb99a29cd77baf227c6812145.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/28866f5ce06893b5f249fac8129e305a2e38ad1eb99a29cd77baf227c6812145.png",
+      "bytes": 4236710,
+      "sha256": "28866f5ce06893b5f249fac8129e305a2e38ad1eb99a29cd77baf227c6812145"
+    },
+    {
       "path": "assets/imported/map-a/31c2a40d626c-hedrenum-v1.png",
+      "storage": "media",
+      "storagePath": "assets/31c2a40d626c3430890e440f12c4d2b9d6c182279c24de2a8f1e5c4de4ac774d.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/31c2a40d626c3430890e440f12c4d2b9d6c182279c24de2a8f1e5c4de4ac774d.png",
       "bytes": 3746385,
       "sha256": "31c2a40d626c3430890e440f12c4d2b9d6c182279c24de2a8f1e5c4de4ac774d"
     },
     {
+      "path": "assets/imported/map-a/36df94cd072b-renumga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/36df94cd072bfc68e3159c7ffdd621ec2d1cec8fa976a04dd71adbdb2b2f96f2.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/36df94cd072bfc68e3159c7ffdd621ec2d1cec8fa976a04dd71adbdb2b2f96f2.png",
+      "bytes": 4475890,
+      "sha256": "36df94cd072bfc68e3159c7ffdd621ec2d1cec8fa976a04dd71adbdb2b2f96f2"
+    },
+    {
       "path": "assets/imported/map-a/398a34371c52-renumga-record-district-v1.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-a/398a34371c52-renumga-record-district-v1.png",
+      "url": "assets/imported/map-a/398a34371c52-renumga-record-district-v1.png",
       "bytes": 4471437,
       "sha256": "398a34371c52a906a3a43d61a3f9c2ad010ecd8260667b9434ee4d78176275ca"
     },
     {
       "path": "assets/imported/map-a/3a421c3d722d-hesphukum-v1.png",
+      "storage": "media",
+      "storagePath": "assets/3a421c3d722d32ebad9184fd9b76f4a82f80ccff603a8114fe2729cc2e7ab17d.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/3a421c3d722d32ebad9184fd9b76f4a82f80ccff603a8114fe2729cc2e7ab17d.png",
       "bytes": 4202920,
       "sha256": "3a421c3d722d32ebad9184fd9b76f4a82f80ccff603a8114fe2729cc2e7ab17d"
     },
     {
+      "path": "assets/imported/map-a/3d92b417ae9b-dorperga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/3d92b417ae9bd9e5c7d450b9bea5fb72b3a2f0129a32280379fa23128a6412d9.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/3d92b417ae9bd9e5c7d450b9bea5fb72b3a2f0129a32280379fa23128a6412d9.png",
+      "bytes": 4159815,
+      "sha256": "3d92b417ae9bd9e5c7d450b9bea5fb72b3a2f0129a32280379fa23128a6412d9"
+    },
+    {
       "path": "assets/imported/map-a/3ef42a2b51fa-narhal-v1.png",
+      "storage": "media",
+      "storagePath": "assets/3ef42a2b51fa7135dc37bf12c7979c50213b26e04eb65875bf822c95fd90f138.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/3ef42a2b51fa7135dc37bf12c7979c50213b26e04eb65875bf822c95fd90f138.png",
       "bytes": 3759429,
       "sha256": "3ef42a2b51fa7135dc37bf12c7979c50213b26e04eb65875bf822c95fd90f138"
     },
     {
+      "path": "assets/imported/map-a/3f7d20992a50-datkinhal-v1.png",
+      "storage": "media",
+      "storagePath": "assets/3f7d20992a50b3c35fb730c81b13362c9e9640c0e75c6cd25136ceba5173e588.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/3f7d20992a50b3c35fb730c81b13362c9e9640c0e75c6cd25136ceba5173e588.png",
+      "bytes": 4363247,
+      "sha256": "3f7d20992a50b3c35fb730c81b13362c9e9640c0e75c6cd25136ceba5173e588"
+    },
+    {
+      "path": "assets/imported/map-a/493b9ddf53de-remrenpilga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/493b9ddf53de3f55f847d6c74ad39f284ff3716a403f5f97d5d9fa08a2ec38f4.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/493b9ddf53de3f55f847d6c74ad39f284ff3716a403f5f97d5d9fa08a2ec38f4.png",
+      "bytes": 4287824,
+      "sha256": "493b9ddf53de3f55f847d6c74ad39f284ff3716a403f5f97d5d9fa08a2ec38f4"
+    },
+    {
       "path": "assets/imported/map-a/4baa1d718313-paltekumga-v2.png",
+      "storage": "media",
+      "storagePath": "assets/4baa1d718313cf6047397d6da4f74407580bdbe96d412174b4ca3460e04d1f27.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/4baa1d718313cf6047397d6da4f74407580bdbe96d412174b4ca3460e04d1f27.png",
       "bytes": 3870180,
       "sha256": "4baa1d718313cf6047397d6da4f74407580bdbe96d412174b4ca3460e04d1f27"
     },
     {
       "path": "assets/imported/map-a/5ebfdcf0eb72-puknaum-v1.png",
+      "storage": "media",
+      "storagePath": "assets/5ebfdcf0eb72a027dd8d411f2f1866e2a78fc4e4476e4cd2abcde81e8f6eece5.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/5ebfdcf0eb72a027dd8d411f2f1866e2a78fc4e4476e4cd2abcde81e8f6eece5.png",
       "bytes": 3954786,
       "sha256": "5ebfdcf0eb72a027dd8d411f2f1866e2a78fc4e4476e4cd2abcde81e8f6eece5"
     },
     {
+      "path": "assets/imported/map-a/6da465a3b819-bepnavhal-v1.png",
+      "storage": "media",
+      "storagePath": "assets/6da465a3b81981fdd44b84cf13be903540704d82e04352693b3d62e67c69e73b.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6da465a3b81981fdd44b84cf13be903540704d82e04352693b3d62e67c69e73b.png",
+      "bytes": 3905657,
+      "sha256": "6da465a3b81981fdd44b84cf13be903540704d82e04352693b3d62e67c69e73b"
+    },
+    {
       "path": "assets/imported/map-a/70dc9e1dca45-radgarga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/70dc9e1dca450a67a8dfe1bc0edd2c621f7523e7f67d593817335c00388c5097.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/70dc9e1dca450a67a8dfe1bc0edd2c621f7523e7f67d593817335c00388c5097.png",
       "bytes": 4450141,
       "sha256": "70dc9e1dca450a67a8dfe1bc0edd2c621f7523e7f67d593817335c00388c5097"
     },
     {
       "path": "assets/imported/map-a/713d107781a0-radarhal-overview-v1.png",
+      "storage": "media",
+      "storagePath": "assets/713d107781a061e6c39ae147191378c87c3524f045b922c7613a7e839c666225.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/713d107781a061e6c39ae147191378c87c3524f045b922c7613a7e839c666225.png",
       "bytes": 4504858,
       "sha256": "713d107781a061e6c39ae147191378c87c3524f045b922c7613a7e839c666225"
     },
     {
       "path": "assets/imported/map-a/7216e340e3ad-knight-connections-v1.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-a/7216e340e3ad-knight-connections-v1.png",
+      "url": "assets/imported/map-a/7216e340e3ad-knight-connections-v1.png",
       "bytes": 4310272,
       "sha256": "7216e340e3ad0709866eccd3152d8e9b033d778a257f936aeb9cd97ec237aa92"
     },
     {
+      "path": "assets/imported/map-a/72d069422449-nimrenhal-v1.png",
+      "storage": "media",
+      "storagePath": "assets/72d069422449040ea5295230249c202acc6fefef3e64399e10f7e4719fde9f29.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/72d069422449040ea5295230249c202acc6fefef3e64399e10f7e4719fde9f29.png",
+      "bytes": 4391188,
+      "sha256": "72d069422449040ea5295230249c202acc6fefef3e64399e10f7e4719fde9f29"
+    },
+    {
       "path": "assets/imported/map-a/7ddd5406b2d3-pukbekum-v1.png",
+      "storage": "media",
+      "storagePath": "assets/7ddd5406b2d3bc2634636f33659ab0081fbd3fba76febd830703bacff7bf586c.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/7ddd5406b2d3bc2634636f33659ab0081fbd3fba76febd830703bacff7bf586c.png",
       "bytes": 3814040,
       "sha256": "7ddd5406b2d3bc2634636f33659ab0081fbd3fba76febd830703bacff7bf586c"
     },
     {
       "path": "assets/imported/map-a/7e57fcd31d9e-dunartor-v1.png",
+      "storage": "media",
+      "storagePath": "assets/7e57fcd31d9e2e12fabe4bb6e2d388a1d678be3f41ceda697d55008cc7a0a2d7.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/7e57fcd31d9e2e12fabe4bb6e2d388a1d678be3f41ceda697d55008cc7a0a2d7.png",
       "bytes": 3762723,
       "sha256": "7e57fcd31d9e2e12fabe4bb6e2d388a1d678be3f41ceda697d55008cc7a0a2d7"
     },
     {
       "path": "assets/imported/map-a/7e6fc3da5e09-yalbekga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/7e6fc3da5e09ea5049801462ce7a4cecc1471af80c52688cdce4c2e8e886618b.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/7e6fc3da5e09ea5049801462ce7a4cecc1471af80c52688cdce4c2e8e886618b.png",
       "bytes": 3768953,
       "sha256": "7e6fc3da5e09ea5049801462ce7a4cecc1471af80c52688cdce4c2e8e886618b"
     },
     {
+      "path": "assets/imported/map-a/86dd4877ed92-dunpukga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/86dd4877ed92e937e1ac02fe6c7a57534b20880cd7a8ab9f64b6f3c21acdd5cf.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/86dd4877ed92e937e1ac02fe6c7a57534b20880cd7a8ab9f64b6f3c21acdd5cf.png",
+      "bytes": 3991449,
+      "sha256": "86dd4877ed92e937e1ac02fe6c7a57534b20880cd7a8ab9f64b6f3c21acdd5cf"
+    },
+    {
+      "path": "assets/imported/map-a/9858f2c00799-kelhesga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/9858f2c0079964bafab23b2e636199f8dcb4560ba710acf664e7f284a0a21f7c.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/9858f2c0079964bafab23b2e636199f8dcb4560ba710acf664e7f284a0a21f7c.png",
+      "bytes": 4292179,
+      "sha256": "9858f2c0079964bafab23b2e636199f8dcb4560ba710acf664e7f284a0a21f7c"
+    },
+    {
+      "path": "assets/imported/map-a/997f651023ea-linsanga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/997f651023eacc842d908411aabca7d972dc267e5174ba1c29ef505637ad0bb8.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/997f651023eacc842d908411aabca7d972dc267e5174ba1c29ef505637ad0bb8.png",
+      "bytes": 4422833,
+      "sha256": "997f651023eacc842d908411aabca7d972dc267e5174ba1c29ef505637ad0bb8"
+    },
+    {
       "path": "assets/imported/map-a/9d69fcecb91f-remdatum-v1.png",
+      "storage": "media",
+      "storagePath": "assets/9d69fcecb91f0550de760a7958f151991d6dd48da0613e2853b21e37cef48612.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/9d69fcecb91f0550de760a7958f151991d6dd48da0613e2853b21e37cef48612.png",
       "bytes": 4388072,
       "sha256": "9d69fcecb91f0550de760a7958f151991d6dd48da0613e2853b21e37cef48612"
     },
     {
       "path": "assets/imported/map-a/a3111cde84b1-royal-connections-v1.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-a/a3111cde84b1-royal-connections-v1.png",
+      "url": "assets/imported/map-a/a3111cde84b1-royal-connections-v1.png",
       "bytes": 4308863,
       "sha256": "a3111cde84b1879373f28b66c8bbea8ed8305a6e92a55a20939ad83666f2f263"
     },
     {
+      "path": "assets/imported/map-a/a5db2c35993d-renumsukga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/a5db2c35993df3aa3d2d4d8b92acbc324e7677a124b20276b8920939d0ca37f0.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/a5db2c35993df3aa3d2d4d8b92acbc324e7677a124b20276b8920939d0ca37f0.png",
+      "bytes": 4143360,
+      "sha256": "a5db2c35993df3aa3d2d4d8b92acbc324e7677a124b20276b8920939d0ca37f0"
+    },
+    {
       "path": "assets/imported/map-a/a8278d80577a-linrenet-overview-v1.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-a/a8278d80577a-linrenet-overview-v1.png",
+      "url": "assets/imported/map-a/a8278d80577a-linrenet-overview-v1.png",
       "bytes": 4176782,
       "sha256": "a8278d80577aa597c57432dcf2c7119a53c90d02b22c424fc7f124878d1ba3ab"
     },
     {
+      "path": "assets/imported/map-a/afdee6094a09-mevkelet-v1.png",
+      "storage": "media",
+      "storagePath": "assets/afdee6094a09647f66f62ee4c449168c0d678fd35d6448c84b0ee1174f7d6db9.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/afdee6094a09647f66f62ee4c449168c0d678fd35d6448c84b0ee1174f7d6db9.png",
+      "bytes": 4331813,
+      "sha256": "afdee6094a09647f66f62ee4c449168c0d678fd35d6448c84b0ee1174f7d6db9"
+    },
+    {
+      "path": "assets/imported/map-a/b2ebe0273d41-ramjirga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/b2ebe0273d4159231ad8da6db8008cfc045015991a4c86d6269d8332e320fe02.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/b2ebe0273d4159231ad8da6db8008cfc045015991a4c86d6269d8332e320fe02.png",
+      "bytes": 4340121,
+      "sha256": "b2ebe0273d4159231ad8da6db8008cfc045015991a4c86d6269d8332e320fe02"
+    },
+    {
       "path": "assets/imported/map-a/b382b96ed785-nimnahal-v1.png",
+      "storage": "media",
+      "storagePath": "assets/b382b96ed785fda1e1fa7baeec9fdb7f8acf01f89ba5a342994e620f6428ed4b.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/b382b96ed785fda1e1fa7baeec9fdb7f8acf01f89ba5a342994e620f6428ed4b.png",
       "bytes": 3924281,
       "sha256": "b382b96ed785fda1e1fa7baeec9fdb7f8acf01f89ba5a342994e620f6428ed4b"
     },
     {
       "path": "assets/imported/map-a/b503d39d5639-jirmebga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/b503d39d56398d3cb11b7f64743568446d0d8a78c07ca2dd69cb79d9bd326b49.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/b503d39d56398d3cb11b7f64743568446d0d8a78c07ca2dd69cb79d9bd326b49.png",
       "bytes": 4440725,
       "sha256": "b503d39d56398d3cb11b7f64743568446d0d8a78c07ca2dd69cb79d9bd326b49"
     },
     {
+      "path": "assets/imported/map-a/b6c251583ae3-heskelkar-v1.png",
+      "storage": "media",
+      "storagePath": "assets/b6c251583ae32f35ae0062a79da67476f4cb410dec87c2d0d1a3886258277a05.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/b6c251583ae32f35ae0062a79da67476f4cb410dec87c2d0d1a3886258277a05.png",
+      "bytes": 4335986,
+      "sha256": "b6c251583ae32f35ae0062a79da67476f4cb410dec87c2d0d1a3886258277a05"
+    },
+    {
       "path": "assets/imported/map-a/b82af1b66259-artisan-connections-v1.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-a/b82af1b66259-artisan-connections-v1.png",
+      "url": "assets/imported/map-a/b82af1b66259-artisan-connections-v1.png",
       "bytes": 4276521,
       "sha256": "b82af1b66259f4148462d15cb6d44d46ff292f60cce34a38c16fcb12822c3c45"
     },
     {
       "path": "assets/imported/map-a/bc89cc0e39b9-hesnarga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/bc89cc0e39b9d842175f0ae83813fe4216c02627d740ec3e69269bc124d5877d.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/bc89cc0e39b9d842175f0ae83813fe4216c02627d740ec3e69269bc124d5877d.png",
       "bytes": 3453322,
       "sha256": "bc89cc0e39b9d842175f0ae83813fe4216c02627d740ec3e69269bc124d5877d"
     },
     {
       "path": "assets/imported/map-a/bd972138c179-pukhesga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/bd972138c179b531bcd785511c15ff362738e11528b7ba5374fe617afc3e241f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/bd972138c179b531bcd785511c15ff362738e11528b7ba5374fe617afc3e241f.png",
       "bytes": 3761912,
       "sha256": "bd972138c179b531bcd785511c15ff362738e11528b7ba5374fe617afc3e241f"
     },
     {
+      "path": "assets/imported/map-a/c11966bc5bc4-remrenga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/c11966bc5bc4989da4857212b5c09a554f729eedbb9447772273a119fb53fc5c.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/c11966bc5bc4989da4857212b5c09a554f729eedbb9447772273a119fb53fc5c.png",
+      "bytes": 4226289,
+      "sha256": "c11966bc5bc4989da4857212b5c09a554f729eedbb9447772273a119fb53fc5c"
+    },
+    {
+      "path": "assets/imported/map-a/c29906102098-ramjirbar-v1.png",
+      "storage": "media",
+      "storagePath": "assets/c29906102098aec35cc876c2d0c7c692acea6f3b0060b25a2720cca572da4d1b.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/c29906102098aec35cc876c2d0c7c692acea6f3b0060b25a2720cca572da4d1b.png",
+      "bytes": 4337116,
+      "sha256": "c29906102098aec35cc876c2d0c7c692acea6f3b0060b25a2720cca572da4d1b"
+    },
+    {
+      "path": "assets/imported/map-a/c48209717a60-perbar-v1.png",
+      "storage": "media",
+      "storagePath": "assets/c48209717a60bd891e1ceedf8c324a0b98fe2bc541d2becbe0d01b47aa5ed4ac.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/c48209717a60bd891e1ceedf8c324a0b98fe2bc541d2becbe0d01b47aa5ed4ac.png",
+      "bytes": 4236701,
+      "sha256": "c48209717a60bd891e1ceedf8c324a0b98fe2bc541d2becbe0d01b47aa5ed4ac"
+    },
+    {
       "path": "assets/imported/map-a/c9e5727e0bd3-hedrenga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/c9e5727e0bd315f366cf59aceb58f4b9e5e15fb5f502f32dc36a56af3e320822.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/c9e5727e0bd315f366cf59aceb58f4b9e5e15fb5f502f32dc36a56af3e320822.png",
       "bytes": 3765145,
       "sha256": "c9e5727e0bd315f366cf59aceb58f4b9e5e15fb5f502f32dc36a56af3e320822"
     },
     {
       "path": "assets/imported/map-a/cee7ae2bf384-diplomatic-connections-v1.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-a/cee7ae2bf384-diplomatic-connections-v1.png",
+      "url": "assets/imported/map-a/cee7ae2bf384-diplomatic-connections-v1.png",
       "bytes": 4483785,
       "sha256": "cee7ae2bf384bddd15743962bd21fd0f08051c35ed775f41103ed2de803231f2"
     },
     {
       "path": "assets/imported/map-a/d2613b2461b1-yalbekum-v1.png",
+      "storage": "media",
+      "storagePath": "assets/d2613b2461b19c4b65811db44423de7b35a24c74767df0c5ba2edd8274b17bd8.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/d2613b2461b19c4b65811db44423de7b35a24c74767df0c5ba2edd8274b17bd8.png",
       "bytes": 3821862,
       "sha256": "d2613b2461b19c4b65811db44423de7b35a24c74767df0c5ba2edd8274b17bd8"
     },
     {
       "path": "assets/imported/map-a/d3f3e19f0c36-enkelhal-v1.png",
+      "storage": "media",
+      "storagePath": "assets/d3f3e19f0c36e79fa76ed0b39b8d8d83ec1b158859646828d7fa712a440ce461.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/d3f3e19f0c36e79fa76ed0b39b8d8d83ec1b158859646828d7fa712a440ce461.png",
       "bytes": 4085401,
       "sha256": "d3f3e19f0c36e79fa76ed0b39b8d8d83ec1b158859646828d7fa712a440ce461"
     },
     {
       "path": "assets/imported/map-a/d6e26a0ca651-hesworkel-v2.png",
+      "storage": "media",
+      "storagePath": "assets/d6e26a0ca651615b2fe74edcb8f0a82f4981a5b81541eb99400b103306b9752f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/d6e26a0ca651615b2fe74edcb8f0a82f4981a5b81541eb99400b103306b9752f.png",
       "bytes": 3670639,
       "sha256": "d6e26a0ca651615b2fe74edcb8f0a82f4981a5b81541eb99400b103306b9752f"
     },
     {
       "path": "assets/imported/map-a/e06e8b9b2f57-bekhespukum-v1.png",
+      "storage": "media",
+      "storagePath": "assets/e06e8b9b2f57aef7a6a52fb8bee04d1e88a476097fc0c39f7640868b111ef3aa.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/e06e8b9b2f57aef7a6a52fb8bee04d1e88a476097fc0c39f7640868b111ef3aa.png",
       "bytes": 3450812,
       "sha256": "e06e8b9b2f57aef7a6a52fb8bee04d1e88a476097fc0c39f7640868b111ef3aa"
     },
     {
+      "path": "assets/imported/map-a/e146adb02790-hespukga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/e146adb027902200c64b64617dbe8c456db1cc2019764c3d7afd11c4686aae28.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/e146adb027902200c64b64617dbe8c456db1cc2019764c3d7afd11c4686aae28.png",
+      "bytes": 4200222,
+      "sha256": "e146adb027902200c64b64617dbe8c456db1cc2019764c3d7afd11c4686aae28"
+    },
+    {
       "path": "assets/imported/map-a/e77d2129b6d8-mevhesga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/e77d2129b6d8df29b8a3f7acac728d6f15ae1061ce5d582d9350568e3441adc6.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/e77d2129b6d8df29b8a3f7acac728d6f15ae1061ce5d582d9350568e3441adc6.png",
       "bytes": 3606156,
       "sha256": "e77d2129b6d8df29b8a3f7acac728d6f15ae1061ce5d582d9350568e3441adc6"
     },
     {
       "path": "assets/imported/map-a/ece2c04afeb3-remkelga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/ece2c04afeb35841bfeef07ce16313cdffe973a37853b02c86a59bb19b832d30.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/ece2c04afeb35841bfeef07ce16313cdffe973a37853b02c86a59bb19b832d30.png",
       "bytes": 4034249,
       "sha256": "ece2c04afeb35841bfeef07ce16313cdffe973a37853b02c86a59bb19b832d30"
     },
     {
+      "path": "assets/imported/map-a/f0338b972a71-bepnavga-v1.png",
+      "storage": "media",
+      "storagePath": "assets/f0338b972a716cd495444a1741518c46f7ac0d9184c9cf67fd4f0834e862c198.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/f0338b972a716cd495444a1741518c46f7ac0d9184c9cf67fd4f0834e862c198.png",
+      "bytes": 3654379,
+      "sha256": "f0338b972a716cd495444a1741518c46f7ac0d9184c9cf67fd4f0834e862c198"
+    },
+    {
       "path": "assets/imported/map-a/ff62bec866c9-jirbaret-v1.png",
+      "storage": "media",
+      "storagePath": "assets/ff62bec866c9769b78bfc3226f12175c2f832cd89b608830f2bfec8afdccf21d.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/ff62bec866c9769b78bfc3226f12175c2f832cd89b608830f2bfec8afdccf21d.png",
       "bytes": 4550244,
       "sha256": "ff62bec866c9769b78bfc3226f12175c2f832cd89b608830f2bfec8afdccf21d"
     },
     {
       "path": "assets/imported/map-b/0018e5eb80bc-dortekum-stone-access-a.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-b/0018e5eb80bc-dortekum-stone-access-a.png",
+      "url": "assets/imported/map-b/0018e5eb80bc-dortekum-stone-access-a.png",
       "bytes": 4206392,
       "sha256": "0018e5eb80bcf32958074e0c38657d0399bd8871ca145878aa1ae6e7f81c747e"
     },
     {
       "path": "assets/imported/map-b/02c49e845246-north-living-sector-b.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-b/02c49e845246-north-living-sector-b.png",
+      "url": "assets/imported/map-b/02c49e845246-north-living-sector-b.png",
       "bytes": 4199275,
       "sha256": "02c49e84524627274d5365736599cd5984fd6009ccc1c3655e22889eab2e2b7b"
     },
     {
+      "path": "assets/imported/map-b/10c0c8e91e02-arsorsan-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/10c0c8e91e024bfffeafe9272ede75ae4c1a216206c074163df1797e309a2215.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/10c0c8e91e024bfffeafe9272ede75ae4c1a216206c074163df1797e309a2215.png",
+      "bytes": 4633122,
+      "sha256": "10c0c8e91e024bfffeafe9272ede75ae4c1a216206c074163df1797e309a2215"
+    },
+    {
       "path": "assets/imported/map-b/12b3c1bca0cf-dorkar-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/12b3c1bca0cfbbbb092d533124d700ef023a72d195f064e1ce6076be667fac1d.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/12b3c1bca0cfbbbb092d533124d700ef023a72d195f064e1ce6076be667fac1d.png",
       "bytes": 4742896,
       "sha256": "12b3c1bca0cfbbbb092d533124d700ef023a72d195f064e1ce6076be667fac1d"
     },
     {
       "path": "assets/imported/map-b/144f834d7546-garsenga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/144f834d7546b0cd57aa448d31bce6e91b75957bdd7405288c449d83978bf655.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/144f834d7546b0cd57aa448d31bce6e91b75957bdd7405288c449d83978bf655.png",
       "bytes": 4544534,
       "sha256": "144f834d7546b0cd57aa448d31bce6e91b75957bdd7405288c449d83978bf655"
     },
     {
       "path": "assets/imported/map-b/153bf9d90bbf-dortekum-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/153bf9d90bbf85269ea5faa070f701320e0d76ae696f604501633f890bac30a4.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/153bf9d90bbf85269ea5faa070f701320e0d76ae696f604501633f890bac30a4.png",
       "bytes": 4695526,
       "sha256": "153bf9d90bbf85269ea5faa070f701320e0d76ae696f604501633f890bac30a4"
     },
     {
+      "path": "assets/imported/map-b/1848e51f5051-renmermir-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/1848e51f505185bb45ee892fe362be55ce3175cd4b3332835945cae9fc0ab030.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/1848e51f505185bb45ee892fe362be55ce3175cd4b3332835945cae9fc0ab030.png",
+      "bytes": 4715486,
+      "sha256": "1848e51f505185bb45ee892fe362be55ce3175cd4b3332835945cae9fc0ab030"
+    },
+    {
+      "path": "assets/imported/map-b/1fdb2080796e-silmunga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/1fdb2080796e68c8cffd115a704e0ead895991d7bd6ec22a3ddf3b5fcca334e4.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/1fdb2080796e68c8cffd115a704e0ead895991d7bd6ec22a3ddf3b5fcca334e4.png",
+      "bytes": 4418390,
+      "sha256": "1fdb2080796e68c8cffd115a704e0ead895991d7bd6ec22a3ddf3b5fcca334e4"
+    },
+    {
       "path": "assets/imported/map-b/21f64741cfe2-yenworkel-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/21f64741cfe28bbce459ee452a7f58b4fd32e01a06f0259fa4c5d85a1baac395.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/21f64741cfe28bbce459ee452a7f58b4fd32e01a06f0259fa4c5d85a1baac395.png",
       "bytes": 4514556,
       "sha256": "21f64741cfe28bbce459ee452a7f58b4fd32e01a06f0259fa4c5d85a1baac395"
     },
     {
+      "path": "assets/imported/map-b/270458532ae3-siltekga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/270458532ae3fa82757c81073a3292e5c3750b2a2979ff5c7624f7550e158171.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/270458532ae3fa82757c81073a3292e5c3750b2a2979ff5c7624f7550e158171.png",
+      "bytes": 4491592,
+      "sha256": "270458532ae3fa82757c81073a3292e5c3750b2a2979ff5c7624f7550e158171"
+    },
+    {
+      "path": "assets/imported/map-b/37107f769f7e-sildatbar-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/37107f769f7e431fcbf22a8d6b783dbd6ef8265d4f5d2290ddd563ca6bdb679d.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/37107f769f7e431fcbf22a8d6b783dbd6ef8265d4f5d2290ddd563ca6bdb679d.png",
+      "bytes": 4538340,
+      "sha256": "37107f769f7e431fcbf22a8d6b783dbd6ef8265d4f5d2290ddd563ca6bdb679d"
+    },
+    {
       "path": "assets/imported/map-b/396e8b1e26aa-nimhal-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/396e8b1e26aa949428911a83ba551d9f47bdee448e05346e685ec82b7649fd96.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/396e8b1e26aa949428911a83ba551d9f47bdee448e05346e685ec82b7649fd96.png",
       "bytes": 4742896,
       "sha256": "396e8b1e26aa949428911a83ba551d9f47bdee448e05346e685ec82b7649fd96"
     },
     {
       "path": "assets/imported/map-b/3989872886d4-bekpukga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/3989872886d40e53e24a1af53b26364baa93d9f0b4be172c8b37cfebc5b715ae.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/3989872886d40e53e24a1af53b26364baa93d9f0b4be172c8b37cfebc5b715ae.png",
       "bytes": 4633140,
       "sha256": "3989872886d40e53e24a1af53b26364baa93d9f0b4be172c8b37cfebc5b715ae"
     },
     {
+      "path": "assets/imported/map-b/3a69657bfb50-nimremhal-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/3a69657bfb50e92e3e41f4a99713b219a13a1b166be76eb87b93369371142b3c.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/3a69657bfb50e92e3e41f4a99713b219a13a1b166be76eb87b93369371142b3c.png",
+      "bytes": 4627657,
+      "sha256": "3a69657bfb50e92e3e41f4a99713b219a13a1b166be76eb87b93369371142b3c"
+    },
+    {
+      "path": "assets/imported/map-b/3b0e2f47666f-siltekel-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/3b0e2f47666f8b12a1fa4c1cb07a2443508c9b7ea92edfa8dbd52db6eb0d0c08.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/3b0e2f47666f8b12a1fa4c1cb07a2443508c9b7ea92edfa8dbd52db6eb0d0c08.png",
+      "bytes": 4618963,
+      "sha256": "3b0e2f47666f8b12a1fa4c1cb07a2443508c9b7ea92edfa8dbd52db6eb0d0c08"
+    },
+    {
       "path": "assets/imported/map-b/47ec7eeee3ec-dorsorhal-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/47ec7eeee3ec738514b0e00d2bdb1e3cc33578695ad3c66747eef878a2061e3f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/47ec7eeee3ec738514b0e00d2bdb1e3cc33578695ad3c66747eef878a2061e3f.png",
       "bytes": 4742896,
       "sha256": "47ec7eeee3ec738514b0e00d2bdb1e3cc33578695ad3c66747eef878a2061e3f"
     },
     {
+      "path": "assets/imported/map-b/49f7479e405e-sordatga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/49f7479e405e273a000594ea6ebc3f562909a0172a033bf00126e7bd6205e7eb.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/49f7479e405e273a000594ea6ebc3f562909a0172a033bf00126e7bd6205e7eb.png",
+      "bytes": 4521535,
+      "sha256": "49f7479e405e273a000594ea6ebc3f562909a0172a033bf00126e7bd6205e7eb"
+    },
+    {
       "path": "assets/imported/map-b/58498be73cee-kelbekga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/58498be73cee1dce4f833d24861a51dc9887ee82187d81cce7223ce38eb23d75.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/58498be73cee1dce4f833d24861a51dc9887ee82187d81cce7223ce38eb23d75.png",
       "bytes": 4334748,
       "sha256": "58498be73cee1dce4f833d24861a51dc9887ee82187d81cce7223ce38eb23d75"
     },
     {
       "path": "assets/imported/map-b/6051893873a7-silamga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/6051893873a7f4359e58cf740ec748772604348ab2cca7dda0343aacd8c03d5d.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6051893873a7f4359e58cf740ec748772604348ab2cca7dda0343aacd8c03d5d.png",
       "bytes": 4742896,
       "sha256": "6051893873a7f4359e58cf740ec748772604348ab2cca7dda0343aacd8c03d5d"
     },
     {
       "path": "assets/imported/map-b/6169dd964384-silbeket-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/6169dd964384bc7f188d673636ebb99b7c0631aa31abb046e44fba2e4bddbc2f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6169dd964384bc7f188d673636ebb99b7c0631aa31abb046e44fba2e4bddbc2f.png",
       "bytes": 4554031,
       "sha256": "6169dd964384bc7f188d673636ebb99b7c0631aa31abb046e44fba2e4bddbc2f"
     },
     {
+      "path": "assets/imported/map-b/61c9c0f6d619-yentorga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/61c9c0f6d6194cc073711f80904cab918060bb25002ad12ed6ba54180a8ba887.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/61c9c0f6d6194cc073711f80904cab918060bb25002ad12ed6ba54180a8ba887.png",
+      "bytes": 4362165,
+      "sha256": "61c9c0f6d6194cc073711f80904cab918060bb25002ad12ed6ba54180a8ba887"
+    },
+    {
       "path": "assets/imported/map-b/6add8ed92527-garsenet-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/6add8ed92527c051b51fd4c863cbe2efe70269173c3ed9093e455bca05dc6aad.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6add8ed92527c051b51fd4c863cbe2efe70269173c3ed9093e455bca05dc6aad.png",
       "bytes": 4640715,
       "sha256": "6add8ed92527c051b51fd4c863cbe2efe70269173c3ed9093e455bca05dc6aad"
     },
     {
       "path": "assets/imported/map-b/70a720211f5d-vebrenhal-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/70a720211f5dff67d433c078b8e85f748a4cd834568c95260e6eb1c48356db88.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/70a720211f5dff67d433c078b8e85f748a4cd834568c95260e6eb1c48356db88.png",
       "bytes": 4741123,
       "sha256": "70a720211f5dff67d433c078b8e85f748a4cd834568c95260e6eb1c48356db88"
     },
     {
+      "path": "assets/imported/map-b/753b33889e9d-sorhal-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/753b33889e9d9223f41cf4b957bc855543d2cc0e0db61cd7cc1ac7c467784c9b.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/753b33889e9d9223f41cf4b957bc855543d2cc0e0db61cd7cc1ac7c467784c9b.png",
+      "bytes": 4515012,
+      "sha256": "753b33889e9d9223f41cf4b957bc855543d2cc0e0db61cd7cc1ac7c467784c9b"
+    },
+    {
       "path": "assets/imported/map-b/779086d332cb-senpukum-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/779086d332cbeb0dd321f97fcb3f8b9988b8462cf63432cb53dbadb9bc804fdc.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/779086d332cbeb0dd321f97fcb3f8b9988b8462cf63432cb53dbadb9bc804fdc.png",
       "bytes": 4741123,
       "sha256": "779086d332cbeb0dd321f97fcb3f8b9988b8462cf63432cb53dbadb9bc804fdc"
     },
     {
       "path": "assets/imported/map-b/7c7da0e5a2c9-yenworkel-windbell-a.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-b/7c7da0e5a2c9-yenworkel-windbell-a.png",
+      "url": "assets/imported/map-b/7c7da0e5a2c9-yenworkel-windbell-a.png",
       "bytes": 4477000,
       "sha256": "7c7da0e5a2c9e236fd9e1b73df3e35dfd862a65bc781e5badfe9435caf5d4200"
     },
     {
+      "path": "assets/imported/map-b/89172465f943-sordatum-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/89172465f943f71e8b33313995492dc71cbc97fc496d502dbbc531961302234c.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/89172465f943f71e8b33313995492dc71cbc97fc496d502dbbc531961302234c.png",
+      "bytes": 4662367,
+      "sha256": "89172465f943f71e8b33313995492dc71cbc97fc496d502dbbc531961302234c"
+    },
+    {
+      "path": "assets/imported/map-b/8963beebd19b-dorkelbar-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/8963beebd19b571bcece4dc0f66a6f4071fe37e205a8eb399db7750c4c824d1f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/8963beebd19b571bcece4dc0f66a6f4071fe37e205a8eb399db7750c4c824d1f.png",
+      "bytes": 4466876,
+      "sha256": "8963beebd19b571bcece4dc0f66a6f4071fe37e205a8eb399db7750c4c824d1f"
+    },
+    {
       "path": "assets/imported/map-b/97ba9e2f0d0c-dortekga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/97ba9e2f0d0cea4c56e6553de460ebb7c834dbc009a582f457cb75a2b9a59199.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/97ba9e2f0d0cea4c56e6553de460ebb7c834dbc009a582f457cb75a2b9a59199.png",
       "bytes": 4631351,
       "sha256": "97ba9e2f0d0cea4c56e6553de460ebb7c834dbc009a582f457cb75a2b9a59199"
     },
     {
       "path": "assets/imported/map-b/9c5b7ca7c68c-belbar-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/9c5b7ca7c68c58255eda62e2a10214316825a4dd4315316647002e0398078e74.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/9c5b7ca7c68c58255eda62e2a10214316825a4dd4315316647002e0398078e74.png",
       "bytes": 4742896,
       "sha256": "9c5b7ca7c68c58255eda62e2a10214316825a4dd4315316647002e0398078e74"
     },
     {
       "path": "assets/imported/map-b/9d13f2dca208-beltekga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/9d13f2dca2083ad30f9ddbfa9cbc1bf0716770732df125fe6ac30d045bb553e0.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/9d13f2dca2083ad30f9ddbfa9cbc1bf0716770732df125fe6ac30d045bb553e0.png",
       "bytes": 4480362,
       "sha256": "9d13f2dca2083ad30f9ddbfa9cbc1bf0716770732df125fe6ac30d045bb553e0"
     },
     {
       "path": "assets/imported/map-b/9df0db870b3c-bekdoret-living-sector-a.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-b/9df0db870b3c-bekdoret-living-sector-a.png",
+      "url": "assets/imported/map-b/9df0db870b3c-bekdoret-living-sector-a.png",
       "bytes": 4549853,
       "sha256": "9df0db870b3c52487ace160ed98684d410d6179bf13de05dbc391805dae31292"
     },
     {
+      "path": "assets/imported/map-b/a0fe740eb369-sildatga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/a0fe740eb36904d6c932cebbcd56fb5ef8182c171a1671da1b5b205661bf010f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/a0fe740eb36904d6c932cebbcd56fb5ef8182c171a1671da1b5b205661bf010f.png",
+      "bytes": 4513810,
+      "sha256": "a0fe740eb36904d6c932cebbcd56fb5ef8182c171a1671da1b5b205661bf010f"
+    },
+    {
+      "path": "assets/imported/map-b/a3557e90a13a-rentekga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/a3557e90a13a172feb2bce2e7d123ebdd00ad68e90898bbe126559336b162b88.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/a3557e90a13a172feb2bce2e7d123ebdd00ad68e90898bbe126559336b162b88.png",
+      "bytes": 4692351,
+      "sha256": "a3557e90a13a172feb2bce2e7d123ebdd00ad68e90898bbe126559336b162b88"
+    },
+    {
+      "path": "assets/imported/map-b/a3fcd3dccc03-rentekum-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/a3fcd3dccc0348574c1b81e42d3ae095d313aaabefb37d59f9537a2709d1d41e.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/a3fcd3dccc0348574c1b81e42d3ae095d313aaabefb37d59f9537a2709d1d41e.png",
+      "bytes": 4696637,
+      "sha256": "a3fcd3dccc0348574c1b81e42d3ae095d313aaabefb37d59f9537a2709d1d41e"
+    },
+    {
       "path": "assets/imported/map-b/aff3c775a30d-yenbekhal-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/aff3c775a30d461d17ea8f3a17a66a70bf4915112533f1912cfc1f76785096f9.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/aff3c775a30d461d17ea8f3a17a66a70bf4915112533f1912cfc1f76785096f9.png",
       "bytes": 4652503,
       "sha256": "aff3c775a30d461d17ea8f3a17a66a70bf4915112533f1912cfc1f76785096f9"
     },
     {
       "path": "assets/imported/map-b/b45ec0f0da95-yenkelga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/b45ec0f0da951c85099245fd18be1353a16b7811ec4fabf1bf08478bc8f46501.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/b45ec0f0da951c85099245fd18be1353a16b7811ec4fabf1bf08478bc8f46501.png",
       "bytes": 4602456,
       "sha256": "b45ec0f0da951c85099245fd18be1353a16b7811ec4fabf1bf08478bc8f46501"
     },
     {
       "path": "assets/imported/map-b/b6b61f13531b-enhalga-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/b6b61f13531bcdcfa7ef44daca06f54ba55b7c2db1a8787258598777be44590a.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/b6b61f13531bcdcfa7ef44daca06f54ba55b7c2db1a8787258598777be44590a.png",
       "bytes": 4741123,
       "sha256": "b6b61f13531bcdcfa7ef44daca06f54ba55b7c2db1a8787258598777be44590a"
     },
     {
       "path": "assets/imported/map-b/ba23bcf00df9-bekhal-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/ba23bcf00df9c1e2a75e0a782b2aa9f750a428f609a6e26f0ce730d4d1f4aea0.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/ba23bcf00df9c1e2a75e0a782b2aa9f750a428f609a6e26f0ce730d4d1f4aea0.png",
       "bytes": 4689405,
       "sha256": "ba23bcf00df9c1e2a75e0a782b2aa9f750a428f609a6e26f0ce730d4d1f4aea0"
     },
     {
       "path": "assets/imported/map-b/ba8f123b5447-kelkar-city-b.png",
+      "storage": "media",
+      "storagePath": "assets/ba8f123b544756e69fd69913aadd0c98b2c966d69dbde22273ac7fb807668fb4.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/ba8f123b544756e69fd69913aadd0c98b2c966d69dbde22273ac7fb807668fb4.png",
       "bytes": 4171383,
       "sha256": "ba8f123b544756e69fd69913aadd0c98b2c966d69dbde22273ac7fb807668fb4"
     },
     {
       "path": "assets/imported/map-b/bbee87e20cd3-south-living-sector-a.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-b/bbee87e20cd3-south-living-sector-a.png",
+      "url": "assets/imported/map-b/bbee87e20cd3-south-living-sector-a.png",
       "bytes": 4741123,
       "sha256": "bbee87e20cd31edc1714ba2fa4389b51bd1cc3961f3c97257f4a038641be38e1"
     },
     {
+      "path": "assets/imported/map-b/c601aa904ee3-yenyeltor-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/c601aa904ee3a6bf91e95ff719a4746dd21edba162fa6f831159ecd7cf34037f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/c601aa904ee3a6bf91e95ff719a4746dd21edba162fa6f831159ecd7cf34037f.png",
+      "bytes": 4585150,
+      "sha256": "c601aa904ee3a6bf91e95ff719a4746dd21edba162fa6f831159ecd7cf34037f"
+    },
+    {
+      "path": "assets/imported/map-b/cae64c12bb74-sorhalga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/cae64c12bb74b2a35056b8f69cab91613fd655e2efaed6e31919da9ad300d0cf.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/cae64c12bb74b2a35056b8f69cab91613fd655e2efaed6e31919da9ad300d0cf.png",
+      "bytes": 4330682,
+      "sha256": "cae64c12bb74b2a35056b8f69cab91613fd655e2efaed6e31919da9ad300d0cf"
+    },
+    {
+      "path": "assets/imported/map-b/cc40235652cc-dorkelga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/cc40235652cc19dd031fef6f9e24df3e7645ccb39d36c1a2f24bcf3cb1d27a6e.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/cc40235652cc19dd031fef6f9e24df3e7645ccb39d36c1a2f24bcf3cb1d27a6e.png",
+      "bytes": 4484638,
+      "sha256": "cc40235652cc19dd031fef6f9e24df3e7645ccb39d36c1a2f24bcf3cb1d27a6e"
+    },
+    {
       "path": "assets/imported/map-b/ce451518649a-belnabga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/ce451518649a2eb7db2643a610130545749cc5a69d57e145ed4c22fb83136439.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/ce451518649a2eb7db2643a610130545749cc5a69d57e145ed4c22fb83136439.png",
       "bytes": 4533819,
       "sha256": "ce451518649a2eb7db2643a610130545749cc5a69d57e145ed4c22fb83136439"
     },
     {
       "path": "assets/imported/map-b/d03e5c394415-senpukga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/d03e5c394415eeb5ed4410b1881d1f793a801a943a7b781a1212cfd3527e5f30.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/d03e5c394415eeb5ed4410b1881d1f793a801a943a7b781a1212cfd3527e5f30.png",
       "bytes": 4680430,
       "sha256": "d03e5c394415eeb5ed4410b1881d1f793a801a943a7b781a1212cfd3527e5f30"
     },
     {
       "path": "assets/imported/map-b/d4a21e359f1d-senpuket-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/d4a21e359f1d44bcad394794edc654ee65feea6b3e6d7f7a7898f1271667e851.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/d4a21e359f1d44bcad394794edc654ee65feea6b3e6d7f7a7898f1271667e851.png",
       "bytes": 4669149,
       "sha256": "d4a21e359f1d44bcad394794edc654ee65feea6b3e6d7f7a7898f1271667e851"
     },
     {
+      "path": "assets/imported/map-b/d58244f3379f-nimrenga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/d58244f3379ffbeda53947507234d42d75d4570ecd98e373fa0180076c7105d2.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/d58244f3379ffbeda53947507234d42d75d4570ecd98e373fa0180076c7105d2.png",
+      "bytes": 4476171,
+      "sha256": "d58244f3379ffbeda53947507234d42d75d4570ecd98e373fa0180076c7105d2"
+    },
+    {
       "path": "assets/imported/map-b/dbfd0906ebb2-yentekga-village-a.png",
+      "storage": "media",
+      "storagePath": "assets/dbfd0906ebb21b871af8f1b504a151b95f5a04f43e57db7c6c883124bd1a551f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/dbfd0906ebb21b871af8f1b504a151b95f5a04f43e57db7c6c883124bd1a551f.png",
       "bytes": 4577172,
       "sha256": "dbfd0906ebb21b871af8f1b504a151b95f5a04f43e57db7c6c883124bd1a551f"
     },
     {
+      "path": "assets/imported/map-b/df8a3800a3a7-radsilhal-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/df8a3800a3a76793449765f0d75a335b69a985ced48a6e701e33654bd8fd63e9.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/df8a3800a3a76793449765f0d75a335b69a985ced48a6e701e33654bd8fd63e9.png",
+      "bytes": 4724978,
+      "sha256": "df8a3800a3a76793449765f0d75a335b69a985ced48a6e701e33654bd8fd63e9"
+    },
+    {
       "path": "assets/imported/map-b/e942de2a6e37-silsorsan-core-a.png",
+      "storage": "media",
+      "storagePath": "assets/e942de2a6e373b7fb4fbad4f57a0d8a34d97e0372ff58b352b07327997885364.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/e942de2a6e373b7fb4fbad4f57a0d8a34d97e0372ff58b352b07327997885364.png",
       "bytes": 4577601,
       "sha256": "e942de2a6e373b7fb4fbad4f57a0d8a34d97e0372ff58b352b07327997885364"
     },
     {
+      "path": "assets/imported/map-b/efd6425fb02d-silbekel-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/efd6425fb02dbba832f25015051f49fb2bcdd43795c3f50f2185670f94a402c7.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/efd6425fb02dbba832f25015051f49fb2bcdd43795c3f50f2185670f94a402c7.png",
+      "bytes": 4522458,
+      "sha256": "efd6425fb02dbba832f25015051f49fb2bcdd43795c3f50f2185670f94a402c7"
+    },
+    {
       "path": "assets/imported/map-b/f2f02b6832e9-silamrenum-city-a.png",
+      "storage": "media",
+      "storagePath": "assets/f2f02b6832e92665866dc031108f7f86dd902dec67a785467acc9818bc3606fb.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/f2f02b6832e92665866dc031108f7f86dd902dec67a785467acc9818bc3606fb.png",
       "bytes": 4734165,
       "sha256": "f2f02b6832e92665866dc031108f7f86dd902dec67a785467acc9818bc3606fb"
     },
     {
       "path": "assets/imported/map-b/f3b301eb945f-bekhal-supply-access-a.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-b/f3b301eb945f-bekhal-supply-access-a.png",
+      "url": "assets/imported/map-b/f3b301eb945f-bekhal-supply-access-a.png",
       "bytes": 3935070,
       "sha256": "f3b301eb945fcc6227a842b1dd0b7ebdebb31e69a20eef9b276e5071148e131a"
     },
     {
+      "path": "assets/imported/map-b/ff7f8d7108f6-radsilga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/ff7f8d7108f62695c693922ffe44ccabd7adf53c2b627d879a4d55d251b2ff7e.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/ff7f8d7108f62695c693922ffe44ccabd7adf53c2b627d879a4d55d251b2ff7e.png",
+      "bytes": 4562258,
+      "sha256": "ff7f8d7108f62695c693922ffe44ccabd7adf53c2b627d879a4d55d251b2ff7e"
+    },
+    {
       "path": "assets/imported/map-c/036db909368a-narbektor-a.png",
+      "storage": "media",
+      "storagePath": "assets/036db909368a17e6ecdf44c9b2380b29edead72ba53ddd67e51ff13945639d73.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/036db909368a17e6ecdf44c9b2380b29edead72ba53ddd67e51ff13945639d73.png",
       "bytes": 3554365,
       "sha256": "036db909368a17e6ecdf44c9b2380b29edead72ba53ddd67e51ff13945639d73"
     },
     {
       "path": "assets/imported/map-c/07c2b2826947-markelmir-quay-insurance-a.png",
+      "storage": "site",
+      "storagePath": "assets/imported/map-c/07c2b2826947-markelmir-quay-insurance-a.png",
+      "url": "assets/imported/map-c/07c2b2826947-markelmir-quay-insurance-a.png",
       "bytes": 4251949,
       "sha256": "07c2b2826947129591c42455065bf66c6522c31c7880a426f54aaf323cf5e723"
     },
     {
       "path": "assets/imported/map-c/15727240dbc4-marlenum-records-a.png",
+      "storage": "media",
+      "storagePath": "assets/15727240dbc475d620636f154f691f14a33a8e94767d0ed1903ec1c9b73d1c01.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/15727240dbc475d620636f154f691f14a33a8e94767d0ed1903ec1c9b73d1c01.png",
       "bytes": 4555261,
       "sha256": "15727240dbc475d620636f154f691f14a33a8e94767d0ed1903ec1c9b73d1c01"
     },
     {
       "path": "assets/imported/map-c/16a3a9cd795b-umnavga-a.png",
+      "storage": "media",
+      "storagePath": "assets/16a3a9cd795bfe4c9ca2034509b80764c8efc3660ddf8e57613ce03736701bce.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/16a3a9cd795bfe4c9ca2034509b80764c8efc3660ddf8e57613ce03736701bce.png",
       "bytes": 4371924,
       "sha256": "16a3a9cd795bfe4c9ca2034509b80764c8efc3660ddf8e57613ce03736701bce"
     },
     {
       "path": "assets/imported/map-c/235c4f2a6405-mernavga-a.png",
+      "storage": "media",
+      "storagePath": "assets/235c4f2a64059e1ffcc91648c8c040e3f63424ee88672d3812090de46aede20f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/235c4f2a64059e1ffcc91648c8c040e3f63424ee88672d3812090de46aede20f.png",
       "bytes": 4642799,
       "sha256": "235c4f2a64059e1ffcc91648c8c040e3f63424ee88672d3812090de46aede20f"
     },
     {
       "path": "assets/imported/map-c/24f35435897f-tikmebhal-seasonal-b.png",
+      "storage": "media",
+      "storagePath": "assets/24f35435897fc51bb5bd9a69927a9723f92c5daa7e0cdf67a8c90aad09aa5835.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/24f35435897fc51bb5bd9a69927a9723f92c5daa7e0cdf67a8c90aad09aa5835.png",
       "bytes": 3693100,
       "sha256": "24f35435897fc51bb5bd9a69927a9723f92c5daa7e0cdf67a8c90aad09aa5835"
     },
     {
       "path": "assets/imported/map-c/25792cdd3430-navrenga-a.png",
+      "storage": "media",
+      "storagePath": "assets/25792cdd343086cd385d41c14e5e29cce395a9ab57be66eb43b6b3e946296297.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/25792cdd343086cd385d41c14e5e29cce395a9ab57be66eb43b6b3e946296297.png",
       "bytes": 4230226,
       "sha256": "25792cdd343086cd385d41c14e5e29cce395a9ab57be66eb43b6b3e946296297"
     },
     {
       "path": "assets/imported/map-c/272499d94a28-silkinga-a.png",
+      "storage": "media",
+      "storagePath": "assets/272499d94a28202a27d743bbcabcf0c0f01fc4194f33e839f4bdd6b5a9dd3be3.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/272499d94a28202a27d743bbcabcf0c0f01fc4194f33e839f4bdd6b5a9dd3be3.png",
       "bytes": 4324785,
       "sha256": "272499d94a28202a27d743bbcabcf0c0f01fc4194f33e839f4bdd6b5a9dd3be3"
     },
     {
       "path": "assets/imported/map-c/2fc852f25843-merbar-a.png",
+      "storage": "media",
+      "storagePath": "assets/2fc852f25843acc2c18428bc9b3b70937359087002ba201715fad96e396009e3.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/2fc852f25843acc2c18428bc9b3b70937359087002ba201715fad96e396009e3.png",
       "bytes": 4662979,
       "sha256": "2fc852f25843acc2c18428bc9b3b70937359087002ba201715fad96e396009e3"
     },
     {
       "path": "assets/imported/map-c/369eb46c40a1-renyalum-a.png",
+      "storage": "media",
+      "storagePath": "assets/369eb46c40a16a89f76dc3a41b09c0ab4e8ab11a91a41be08cd442a7c2f88fe6.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/369eb46c40a16a89f76dc3a41b09c0ab4e8ab11a91a41be08cd442a7c2f88fe6.png",
       "bytes": 4296110,
       "sha256": "369eb46c40a16a89f76dc3a41b09c0ab4e8ab11a91a41be08cd442a7c2f88fe6"
     },
     {
       "path": "assets/imported/map-c/36c0cbd25ae1-tikramga-a.png",
+      "storage": "media",
+      "storagePath": "assets/36c0cbd25ae141ab32de5a4e85e8e8ea197faac881d4e365fb3ee250955fc7d8.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/36c0cbd25ae141ab32de5a4e85e8e8ea197faac881d4e365fb3ee250955fc7d8.png",
       "bytes": 4253776,
       "sha256": "36c0cbd25ae141ab32de5a4e85e8e8ea197faac881d4e365fb3ee250955fc7d8"
     },
     {
       "path": "assets/imported/map-c/4cc45c4d2235-ummarkel-departure-a.png",
+      "storage": "media",
+      "storagePath": "assets/4cc45c4d223510463ff2413bbaaf9171025474311d58a726d3e5642474927fae.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/4cc45c4d223510463ff2413bbaaf9171025474311d58a726d3e5642474927fae.png",
       "bytes": 3933202,
       "sha256": "4cc45c4d223510463ff2413bbaaf9171025474311d58a726d3e5642474927fae"
     },
     {
       "path": "assets/imported/map-c/4e27abe19e66-navhal-lodging-a.png",
+      "storage": "media",
+      "storagePath": "assets/4e27abe19e66bf5fea898df4701d236cf27f16643b3058a4a22730512cc8f3b7.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/4e27abe19e66bf5fea898df4701d236cf27f16643b3058a4a22730512cc8f3b7.png",
       "bytes": 4503774,
       "sha256": "4e27abe19e66bf5fea898df4701d236cf27f16643b3058a4a22730512cc8f3b7"
     },
     {
       "path": "assets/imported/map-c/4f89ee5771f3-dorsorsan-a.png",
+      "storage": "media",
+      "storagePath": "assets/4f89ee5771f31def64378c186c49a56a16aad507216d9fda67735a0ab78eaa71.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/4f89ee5771f31def64378c186c49a56a16aad507216d9fda67735a0ab78eaa71.png",
       "bytes": 4055978,
       "sha256": "4f89ee5771f31def64378c186c49a56a16aad507216d9fda67735a0ab78eaa71"
     },
     {
       "path": "assets/imported/map-c/4f9f16b589ca-silrensan-a.png",
+      "storage": "media",
+      "storagePath": "assets/4f9f16b589ca419bb7b8a368ecc96907f093e486732e26d404223246a351bf3c.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/4f9f16b589ca419bb7b8a368ecc96907f093e486732e26d404223246a351bf3c.png",
       "bytes": 4378514,
       "sha256": "4f9f16b589ca419bb7b8a368ecc96907f093e486732e26d404223246a351bf3c"
     },
     {
       "path": "assets/imported/map-c/5cb8e4751524-umkelga-a.png",
+      "storage": "media",
+      "storagePath": "assets/5cb8e4751524ab24c3a4bcc129dfe16ac8ae0f38b34fe3b5b2b1b7afcd282f08.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/5cb8e4751524ab24c3a4bcc129dfe16ac8ae0f38b34fe3b5b2b1b7afcd282f08.png",
       "bytes": 4346622,
       "sha256": "5cb8e4751524ab24c3a4bcc129dfe16ac8ae0f38b34fe3b5b2b1b7afcd282f08"
     },
     {
       "path": "assets/imported/map-c/5df7261f7766-narmosga-a.png",
+      "storage": "media",
+      "storagePath": "assets/5df7261f77663280850edc1df1a5d635a0caa79d158df42ca6e2b98faccd9869.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/5df7261f77663280850edc1df1a5d635a0caa79d158df42ca6e2b98faccd9869.png",
       "bytes": 4035932,
       "sha256": "5df7261f77663280850edc1df1a5d635a0caa79d158df42ca6e2b98faccd9869"
     },
     {
       "path": "assets/imported/map-c/6542a3fe3324-belmebga-a.png",
+      "storage": "media",
+      "storagePath": "assets/6542a3fe33247b71f17e1e4868440e225fef1a23c119e2fc827deee18588cee7.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6542a3fe33247b71f17e1e4868440e225fef1a23c119e2fc827deee18588cee7.png",
       "bytes": 4432611,
       "sha256": "6542a3fe33247b71f17e1e4868440e225fef1a23c119e2fc827deee18588cee7"
     },
     {
       "path": "assets/imported/map-c/6826325733e6-pukmerga-a.png",
+      "storage": "media",
+      "storagePath": "assets/6826325733e6ca2788961ac87103695e518b2ac939be08d8d429c7923b52363f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6826325733e6ca2788961ac87103695e518b2ac939be08d8d429c7923b52363f.png",
       "bytes": 4542718,
       "sha256": "6826325733e6ca2788961ac87103695e518b2ac939be08d8d429c7923b52363f"
     },
     {
       "path": "assets/imported/map-c/6cc97f64cc16-silmermir-a.png",
+      "storage": "media",
+      "storagePath": "assets/6cc97f64cc1621ac4fff9d389ebd60b08be2e1b0e2d6fa0075a14c75afb59028.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6cc97f64cc1621ac4fff9d389ebd60b08be2e1b0e2d6fa0075a14c75afb59028.png",
       "bytes": 4559087,
       "sha256": "6cc97f64cc1621ac4fff9d389ebd60b08be2e1b0e2d6fa0075a14c75afb59028"
     },
     {
       "path": "assets/imported/map-c/6ee2723ab0aa-mebmerkel-a.png",
+      "storage": "media",
+      "storagePath": "assets/6ee2723ab0aa6982a0d459414ab579e4d267fc53e59afce7af253544f9132473.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6ee2723ab0aa6982a0d459414ab579e4d267fc53e59afce7af253544f9132473.png",
       "bytes": 4067367,
       "sha256": "6ee2723ab0aa6982a0d459414ab579e4d267fc53e59afce7af253544f9132473"
     },
     {
       "path": "assets/imported/map-c/7d67605cf2c8-umkelsan-a.png",
+      "storage": "media",
+      "storagePath": "assets/7d67605cf2c838b4009033c70baa081d86f713bdb5cf4deae69e8e784f312e49.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/7d67605cf2c838b4009033c70baa081d86f713bdb5cf4deae69e8e784f312e49.png",
       "bytes": 4291945,
       "sha256": "7d67605cf2c838b4009033c70baa081d86f713bdb5cf4deae69e8e784f312e49"
     },
     {
       "path": "assets/imported/map-c/7de59f375251-hedmerga-a.png",
+      "storage": "media",
+      "storagePath": "assets/7de59f375251bec7005a2b54e160b71239c11c776f2c5ce3b2201c0a7aa3a32b.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/7de59f375251bec7005a2b54e160b71239c11c776f2c5ce3b2201c0a7aa3a32b.png",
       "bytes": 4422196,
       "sha256": "7de59f375251bec7005a2b54e160b71239c11c776f2c5ce3b2201c0a7aa3a32b"
     },
     {
       "path": "assets/imported/map-c/8a21f4a022a8-worksilga-a.png",
+      "storage": "media",
+      "storagePath": "assets/8a21f4a022a8c3b685d728c601c5428c0fe35480db49305767933b95d0473311.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/8a21f4a022a8c3b685d728c601c5428c0fe35480db49305767933b95d0473311.png",
       "bytes": 4318384,
       "sha256": "8a21f4a022a8c3b685d728c601c5428c0fe35480db49305767933b95d0473311"
     },
     {
       "path": "assets/imported/map-c/8f80b69a8bf4-belmarmir-a.png",
+      "storage": "media",
+      "storagePath": "assets/8f80b69a8bf4cd5af25ebbf2e74e2d4333fcc4e19de90b7129d78d630b01d0c7.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/8f80b69a8bf4cd5af25ebbf2e74e2d4333fcc4e19de90b7129d78d630b01d0c7.png",
       "bytes": 4472368,
       "sha256": "8f80b69a8bf4cd5af25ebbf2e74e2d4333fcc4e19de90b7129d78d630b01d0c7"
     },
     {
       "path": "assets/imported/map-c/921df01f5bbb-mebmerga-a.png",
+      "storage": "media",
+      "storagePath": "assets/921df01f5bbb700c29a6be151359a4097e5faf2a20115cc0291a44feedbf191c.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/921df01f5bbb700c29a6be151359a4097e5faf2a20115cc0291a44feedbf191c.png",
       "bytes": 3868419,
       "sha256": "921df01f5bbb700c29a6be151359a4097e5faf2a20115cc0291a44feedbf191c"
     },
     {
       "path": "assets/imported/map-c/9856fc746144-narperga-a.png",
+      "storage": "media",
+      "storagePath": "assets/9856fc7461449ce0b0be3329190eb19714cae3270b26f2f2a20db06b6ba4d5d0.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/9856fc7461449ce0b0be3329190eb19714cae3270b26f2f2a20db06b6ba4d5d0.png",
       "bytes": 3612529,
       "sha256": "9856fc7461449ce0b0be3329190eb19714cae3270b26f2f2a20db06b6ba4d5d0"
     },
     {
       "path": "assets/imported/map-c/9a429cd6461e-marnarga-a.png",
+      "storage": "media",
+      "storagePath": "assets/9a429cd6461efbe06f1913bb3d3061bfd49bf60e91b4ef3ba855fd7e6c9575cb.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/9a429cd6461efbe06f1913bb3d3061bfd49bf60e91b4ef3ba855fd7e6c9575cb.png",
       "bytes": 4152940,
       "sha256": "9a429cd6461efbe06f1913bb3d3061bfd49bf60e91b4ef3ba855fd7e6c9575cb"
     },
     {
       "path": "assets/imported/map-c/9b611360827c-silmerga-a.png",
+      "storage": "media",
+      "storagePath": "assets/9b611360827c4e0b32d00a638af20022e7aba9524206a9ba8209ce99ad819586.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/9b611360827c4e0b32d00a638af20022e7aba9524206a9ba8209ce99ad819586.png",
       "bytes": 4317910,
       "sha256": "9b611360827c4e0b32d00a638af20022e7aba9524206a9ba8209ce99ad819586"
     },
     {
       "path": "assets/imported/map-c/a66c56671617-hedkelbar-b.png",
+      "storage": "media",
+      "storagePath": "assets/a66c566716170e914e9a5441473c2a7b0b962358fb1dcd33165ae039a90882bc.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/a66c566716170e914e9a5441473c2a7b0b962358fb1dcd33165ae039a90882bc.png",
       "bytes": 4128539,
       "sha256": "a66c566716170e914e9a5441473c2a7b0b962358fb1dcd33165ae039a90882bc"
     },
     {
       "path": "assets/imported/map-c/aba70a4327f8-sorsanga-a.png",
+      "storage": "media",
+      "storagePath": "assets/aba70a4327f8a6ec5a3f1933f2dc18fd17699f5f906e796331275747e73861ca.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/aba70a4327f8a6ec5a3f1933f2dc18fd17699f5f906e796331275747e73861ca.png",
       "bytes": 4366695,
       "sha256": "aba70a4327f8a6ec5a3f1933f2dc18fd17699f5f906e796331275747e73861ca"
     },
     {
       "path": "assets/imported/map-c/af42fc3c0000-marpuk-a.png",
+      "storage": "media",
+      "storagePath": "assets/af42fc3c00006102753dc3196a9ed564be4523925a73fd3ed8d97d423fc85f06.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/af42fc3c00006102753dc3196a9ed564be4523925a73fd3ed8d97d423fc85f06.png",
       "bytes": 4012352,
       "sha256": "af42fc3c00006102753dc3196a9ed564be4523925a73fd3ed8d97d423fc85f06"
     },
     {
       "path": "assets/imported/map-c/b3020f615a92-workkelhal-a.png",
+      "storage": "media",
+      "storagePath": "assets/b3020f615a9284be69f3546900701a2347799c3183b10ee85c2e8087796470d1.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/b3020f615a9284be69f3546900701a2347799c3183b10ee85c2e8087796470d1.png",
       "bytes": 4401216,
       "sha256": "b3020f615a9284be69f3546900701a2347799c3183b10ee85c2e8087796470d1"
     },
     {
       "path": "assets/imported/map-c/bc3b495a9785-mebtekga-a.png",
+      "storage": "media",
+      "storagePath": "assets/bc3b495a9785a8914207c7ec094754bdfffa4801d61dd555e0bfadfd74e2b107.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/bc3b495a9785a8914207c7ec094754bdfffa4801d61dd555e0bfadfd74e2b107.png",
       "bytes": 4484372,
       "sha256": "bc3b495a9785a8914207c7ec094754bdfffa4801d61dd555e0bfadfd74e2b107"
     },
     {
       "path": "assets/imported/map-c/c69de49a3ebd-mernimbar-a.png",
+      "storage": "media",
+      "storagePath": "assets/c69de49a3ebd8d800afa95cdf35a0a76d0e565ce553d00a467609648b796c47a.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/c69de49a3ebd8d800afa95cdf35a0a76d0e565ce553d00a467609648b796c47a.png",
       "bytes": 4690205,
       "sha256": "c69de49a3ebd8d800afa95cdf35a0a76d0e565ce553d00a467609648b796c47a"
     },
     {
       "path": "assets/imported/map-c/cf702eb32989-belbekel-a.png",
+      "storage": "media",
+      "storagePath": "assets/cf702eb3298982047c274354f955e3b6d0f7c07f6f7386f758f5d7fd8147016e.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/cf702eb3298982047c274354f955e3b6d0f7c07f6f7386f758f5d7fd8147016e.png",
       "bytes": 4392301,
       "sha256": "cf702eb3298982047c274354f955e3b6d0f7c07f6f7386f758f5d7fd8147016e"
     },
     {
       "path": "assets/imported/map-c/d42a5ac20c00-narmarlenum-a.png",
+      "storage": "media",
+      "storagePath": "assets/d42a5ac20c0038c22871f86c24a343de7ed1746864b9d2c7e37e29e624de6cce.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/d42a5ac20c0038c22871f86c24a343de7ed1746864b9d2c7e37e29e624de6cce.png",
       "bytes": 3254265,
       "sha256": "d42a5ac20c0038c22871f86c24a343de7ed1746864b9d2c7e37e29e624de6cce"
     },
     {
       "path": "assets/imported/map-c/d7420b50b593-silsorga-a.png",
+      "storage": "media",
+      "storagePath": "assets/d7420b50b59313cd6167ffd7c4b8404440e585cc79eacd96d4b68b9d39fe3f63.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/d7420b50b59313cd6167ffd7c4b8404440e585cc79eacd96d4b68b9d39fe3f63.png",
       "bytes": 4374168,
       "sha256": "d7420b50b59313cd6167ffd7c4b8404440e585cc79eacd96d4b68b9d39fe3f63"
     },
     {
       "path": "assets/imported/map-c/dc74538a35f1-puktekum-a.png",
+      "storage": "media",
+      "storagePath": "assets/dc74538a35f14867b43eff6513719f6bce086bb9ece25f53336a2819e5fd7c72.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/dc74538a35f14867b43eff6513719f6bce086bb9ece25f53336a2819e5fd7c72.png",
       "bytes": 4299468,
       "sha256": "dc74538a35f14867b43eff6513719f6bce086bb9ece25f53336a2819e5fd7c72"
     },
     {
       "path": "assets/imported/map-c/df07a6348068-workrenum-a.png",
+      "storage": "media",
+      "storagePath": "assets/df07a6348068262cadfad64beee624734764fc9ac7e2aa568a5a68454b14b7c5.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/df07a6348068262cadfad64beee624734764fc9ac7e2aa568a5a68454b14b7c5.png",
       "bytes": 4415834,
       "sha256": "df07a6348068262cadfad64beee624734764fc9ac7e2aa568a5a68454b14b7c5"
     },
     {
       "path": "assets/imported/map-c/e4b7c25a80d3-merbelmar-a.png",
+      "storage": "media",
+      "storagePath": "assets/e4b7c25a80d3d1c85ec8a40b6e0655058b1fedaf8968bcc1d661f213a54ac48e.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/e4b7c25a80d3d1c85ec8a40b6e0655058b1fedaf8968bcc1d661f213a54ac48e.png",
       "bytes": 4471786,
       "sha256": "e4b7c25a80d3d1c85ec8a40b6e0655058b1fedaf8968bcc1d661f213a54ac48e"
     },
     {
       "path": "assets/imported/map-c/e65fe040de13-marmoshal-a.png",
+      "storage": "media",
+      "storagePath": "assets/e65fe040de135b739a6a814c43b2935c8e2b0d05640dc92ae58b175769d7edc3.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/e65fe040de135b739a6a814c43b2935c8e2b0d05640dc92ae58b175769d7edc3.png",
       "bytes": 4159650,
       "sha256": "e65fe040de135b739a6a814c43b2935c8e2b0d05640dc92ae58b175769d7edc3"
     },
     {
       "path": "assets/imported/map-c/e808d2dfd57f-bellambar-a.png",
+      "storage": "media",
+      "storagePath": "assets/e808d2dfd57f2fc58af61421f0c4cd3168e762ca8a888ff9f60b65fd7195d6f8.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/e808d2dfd57f2fc58af61421f0c4cd3168e762ca8a888ff9f60b65fd7195d6f8.png",
       "bytes": 4318987,
       "sha256": "e808d2dfd57f2fc58af61421f0c4cd3168e762ca8a888ff9f60b65fd7195d6f8"
     },
     {
       "path": "assets/imported/map-c/e9189de19d86-markelmir-center-a.png",
+      "storage": "media",
+      "storagePath": "assets/e9189de19d866a1392f68c0494b5453504f7fd5e0f947238449f55d06f2f9931.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/e9189de19d866a1392f68c0494b5453504f7fd5e0f947238449f55d06f2f9931.png",
       "bytes": 4325543,
       "sha256": "e9189de19d866a1392f68c0494b5453504f7fd5e0f947238449f55d06f2f9931"
     },
     {
       "path": "assets/imported/map-c/efe7302dbcfb-workbar-administration-b.png",
+      "storage": "media",
+      "storagePath": "assets/efe7302dbcfbfce4021b8bb5ec3bb43310c9717a78b31407b557ba3f5e0af5b3.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/efe7302dbcfbfce4021b8bb5ec3bb43310c9717a78b31407b557ba3f5e0af5b3.png",
       "bytes": 4172527,
       "sha256": "efe7302dbcfbfce4021b8bb5ec3bb43310c9717a78b31407b557ba3f5e0af5b3"
     },
     {
       "path": "assets/imported/map-c/f2fd380cb340-narmarkel-a.png",
+      "storage": "media",
+      "storagePath": "assets/f2fd380cb340fb81d1b42617262b9b1ed6cc6e2485700187f245b7477b1a2f27.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/f2fd380cb340fb81d1b42617262b9b1ed6cc6e2485700187f245b7477b1a2f27.png",
       "bytes": 3552806,
       "sha256": "f2fd380cb340fb81d1b42617262b9b1ed6cc6e2485700187f245b7477b1a2f27"
     },
     {
       "path": "assets/imported/map-c/f46189bb6dd6-silsorkel-a.png",
+      "storage": "media",
+      "storagePath": "assets/f46189bb6dd6c8d2d2739ab1440d378a707f7ab437057139ee0086661e95beca.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/f46189bb6dd6c8d2d2739ab1440d378a707f7ab437057139ee0086661e95beca.png",
       "bytes": 4418614,
       "sha256": "f46189bb6dd6c8d2d2739ab1440d378a707f7ab437057139ee0086661e95beca"
     },
     {
       "path": "assets/imported/map-c/fae1adfbe5c0-workrenga-a.png",
+      "storage": "media",
+      "storagePath": "assets/fae1adfbe5c0d2874095c51652eebe833021f0db081a7dec18a097c53a935a91.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/fae1adfbe5c0d2874095c51652eebe833021f0db081a7dec18a097c53a935a91.png",
       "bytes": 4432016,
       "sha256": "fae1adfbe5c0d2874095c51652eebe833021f0db081a7dec18a097c53a935a91"
     },
     {
       "path": "assets/imported/map-c/fef8f346ae2f-mebbar-a.png",
+      "storage": "media",
+      "storagePath": "assets/fef8f346ae2fffe304a1e707f9570b11be683faee901b0d9e81df628876ebc05.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/fef8f346ae2fffe304a1e707f9570b11be683faee901b0d9e81df628876ebc05.png",
       "bytes": 4374333,
       "sha256": "fef8f346ae2fffe304a1e707f9570b11be683faee901b0d9e81df628876ebc05"
     },
     {
-      "path": "assets/kelnabet-pilot.png",
-      "bytes": 24889839,
-      "sha256": "3cee737d2b9377f7c075ae0507f1dc5492f78777c55b2bacb83d40b57c80452a"
+      "path": "assets/kelnabet-current-access-int311-51b514f2cc4a.png",
+      "storage": "site",
+      "storagePath": "assets/kelnabet-current-access-int311-51b514f2cc4a.png",
+      "url": "assets/kelnabet-current-access-int311-51b514f2cc4a.png",
+      "bytes": 8860559,
+      "sha256": "51b514f2cc4a99a67637f4217e5244d878a3576e39c5c990512c3071e6cac1f9"
     },
     {
-      "path": "assets/leonia-knight-access-joined.png",
-      "bytes": 4422604,
-      "sha256": "b0d91922e960324fd1da55065644e3ccb89ab4f30d0182c2571896ec05aa4d1a"
+      "path": "assets/kelnabet-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/kelnabet-pilot.png",
+      "url": "assets/kelnabet-pilot.png",
+      "bytes": 24896169,
+      "sha256": "f6c04db0ba177be11c78db97c3786b2afdcdb97299406e780756acfd491829a3"
+    },
+    {
+      "path": "assets/leonia-knight-access-joined-int309.png",
+      "storage": "site",
+      "storagePath": "assets/leonia-knight-access-joined-int309.png",
+      "url": "assets/leonia-knight-access-joined-int309.png",
+      "bytes": 4671189,
+      "sha256": "4cc134d99c0aac549afc10ceea8837b0e81c42d877359bf6105df73d9bdb2c97"
     },
     {
       "path": "assets/leonia-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/leonia-pilot.png",
+      "url": "assets/leonia-pilot.png",
       "bytes": 8663146,
       "sha256": "7af863d515e990d1c8f5ead8d4f4de49feafe4662faeca11e28b14fb59379ff0"
     },
     {
-      "path": "assets/leonia-royal-access-joined.png",
-      "bytes": 4833526,
-      "sha256": "bd77fb1ea5282dcf49960bad2a6d1ce3b051e35443df108bc300bba18026611d"
+      "path": "assets/leonia-royal-access-joined-int309.png",
+      "storage": "site",
+      "storagePath": "assets/leonia-royal-access-joined-int309.png",
+      "url": "assets/leonia-royal-access-joined-int309.png",
+      "bytes": 5165478,
+      "sha256": "e361f637d8afc06c29f7f4fd3d72502d135317ba810707a35befa30a79bf8b67"
     },
     {
       "path": "assets/linrenet-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/linrenet-pilot.png",
+      "url": "assets/linrenet-pilot.png",
       "bytes": 13366896,
       "sha256": "468f9e9b6ea695fe5e5624cd97bb200a2781d1707fd3fafcfe303184bbd16363"
     },
     {
       "path": "assets/marnabmir-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/69d4e1cd703b71df29ac94896d45d1511eec5313272effa8c7fa2da5481b81f8.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/69d4e1cd703b71df29ac94896d45d1511eec5313272effa8c7fa2da5481b81f8.png",
       "bytes": 3564133,
       "sha256": "69d4e1cd703b71df29ac94896d45d1511eec5313272effa8c7fa2da5481b81f8"
     },
     {
       "path": "assets/marnabmir-quays-detail-a.png",
+      "storage": "site",
+      "storagePath": "assets/marnabmir-quays-detail-a.png",
+      "url": "assets/marnabmir-quays-detail-a.png",
       "bytes": 4048212,
       "sha256": "6287e5cfe738a5a15610669807390c6471fd70319a9a544e6be944615c495087"
     },
     {
       "path": "assets/martorga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/5c4dc431a63c9e7c80b5484f78cd1d6f0cc66dace7a3a6d7d41f260da344bd72.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/5c4dc431a63c9e7c80b5484f78cd1d6f0cc66dace7a3a6d7d41f260da344bd72.png",
       "bytes": 3476444,
       "sha256": "5c4dc431a63c9e7c80b5484f78cd1d6f0cc66dace7a3a6d7d41f260da344bd72"
     },
     {
       "path": "assets/martorga-geographic-access-joined.png",
+      "storage": "site",
+      "storagePath": "assets/martorga-geographic-access-joined.png",
+      "url": "assets/martorga-geographic-access-joined.png",
       "bytes": 5706410,
       "sha256": "9746fb8f577b27676482356c315ce87439997859d43d49ce3f1ed9adb067981c"
     },
     {
       "path": "assets/martorga-lighthouse-a.png",
+      "storage": "site",
+      "storagePath": "assets/martorga-lighthouse-a.png",
+      "url": "assets/martorga-lighthouse-a.png",
       "bytes": 4066571,
       "sha256": "b0508c9a65fd7625fa70ab12e7b3cee04bf479d8daa71a33e9c8787787366ad3"
     },
     {
       "path": "assets/merhalet-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/merhalet-pilot.png",
+      "url": "assets/merhalet-pilot.png",
       "bytes": 13426002,
       "sha256": "564eed05473af33ff5caf63fa2a8e5d99bed8db8a3a6105dbc22740e54a54734"
     },
     {
       "path": "assets/navhalga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/3eb37e16f05d279ae273ad80c35f78728be7efb4478c8dc9fbbea7bf9f5a133d.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/3eb37e16f05d279ae273ad80c35f78728be7efb4478c8dc9fbbea7bf9f5a133d.png",
       "bytes": 3059749,
       "sha256": "3eb37e16f05d279ae273ad80c35f78728be7efb4478c8dc9fbbea7bf9f5a133d"
     },
     {
       "path": "assets/navhalgarin-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/c176bba1c129e95b6ffad01d35acb9fdec5c60934361127160c02bee19584e77.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/c176bba1c129e95b6ffad01d35acb9fdec5c60934361127160c02bee19584e77.png",
       "bytes": 3669421,
       "sha256": "c176bba1c129e95b6ffad01d35acb9fdec5c60934361127160c02bee19584e77"
     },
     {
       "path": "assets/newhallow-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/ee7f0e004801486538a466e5c058468bd5721051812ef50041d9efb441c34623.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/ee7f0e004801486538a466e5c058468bd5721051812ef50041d9efb441c34623.png",
       "bytes": 3456533,
       "sha256": "ee7f0e004801486538a466e5c058468bd5721051812ef50041d9efb441c34623"
     },
     {
       "path": "assets/nimnaret-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/nimnaret-pilot.png",
+      "url": "assets/nimnaret-pilot.png",
       "bytes": 12073066,
       "sha256": "6d1a071dd3cef3e4b0e8e4f102dfaa1ddc4104c37846e85bd01ab22e4d9c2470"
     },
     {
       "path": "assets/nimsolet-pilot.png",
-      "bytes": 12141831,
-      "sha256": "cf31ce47a510b83a00ade06ad4580f2be7ebadbfb5d2b8159c464d4f281afbf7"
+      "storage": "site",
+      "storagePath": "assets/nimsolet-pilot.png",
+      "url": "assets/nimsolet-pilot.png",
+      "bytes": 12143709,
+      "sha256": "2dc07878e434a9050cf515adf60eb228bb7ed8a947a5995ad51fdd08a9e4cf03"
     },
     {
       "path": "assets/norghard-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/norghard-pilot.png",
+      "url": "assets/norghard-pilot.png",
       "bytes": 13767362,
       "sha256": "025e6fff252aa8c227c4c9df78e56729166a2f7af3eae1fabade0263a85e28d8"
     },
     {
       "path": "assets/norghard-port-core-connections-a.png",
+      "storage": "site",
+      "storagePath": "assets/norghard-port-core-connections-a.png",
+      "url": "assets/norghard-port-core-connections-a.png",
       "bytes": 3592821,
       "sha256": "3d0176938873fbb792ef962e2b63a3a42c3dd8f0e01758d92b747bd0007e4dd7"
     },
     {
       "path": "assets/observatory-pair-connections-a.png",
+      "storage": "site",
+      "storagePath": "assets/observatory-pair-connections-a.png",
+      "url": "assets/observatory-pair-connections-a.png",
       "bytes": 3458437,
       "sha256": "f0287302f134903d83e2564f7ce4427a18bb8229c86078cebdc214aa83f1128f"
     },
     {
       "path": "assets/pernabpier-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/131335abc9a242b6bc2a9d59ce661124df66b204daeb71337994035e95ba4f43.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/131335abc9a242b6bc2a9d59ce661124df66b204daeb71337994035e95ba4f43.png",
       "bytes": 3298839,
       "sha256": "131335abc9a242b6bc2a9d59ce661124df66b204daeb71337994035e95ba4f43"
     },
     {
       "path": "assets/pertekga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/2d2fff931bfe0779ae51ba847d42adec0f70d87644ab0bcfcb71b3f0abeab680.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/2d2fff931bfe0779ae51ba847d42adec0f70d87644ab0bcfcb71b3f0abeab680.png",
       "bytes": 3333792,
       "sha256": "2d2fff931bfe0779ae51ba847d42adec0f70d87644ab0bcfcb71b3f0abeab680"
     },
     {
       "path": "assets/ravenstone-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/9017dbc1a30202975d3f693d912756c477fde78f8b7c2fc3b9367f47e2782848.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/9017dbc1a30202975d3f693d912756c477fde78f8b7c2fc3b9367f47e2782848.png",
       "bytes": 3264482,
       "sha256": "9017dbc1a30202975d3f693d912756c477fde78f8b7c2fc3b9367f47e2782848"
     },
     {
       "path": "assets/senhalet-pilot.png",
-      "bytes": 17080291,
-      "sha256": "e41104be96e68d57bc9c073c16f60c716f98a20390f859d18b4ca18000227cac"
+      "storage": "site",
+      "storagePath": "assets/senhalet-pilot.png",
+      "url": "assets/senhalet-pilot.png",
+      "bytes": 17106518,
+      "sha256": "9ee0b6914f9ac3f48334d83bcae8baa660309a343273817a233dafff31bf1171"
     },
     {
       "path": "assets/silbekga-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/6b8e662792a1da4d2aa32c7f58a85d635b32f6d7e3b24f12f27d35bde9a7d90c.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/6b8e662792a1da4d2aa32c7f58a85d635b32f6d7e3b24f12f27d35bde9a7d90c.png",
       "bytes": 3219965,
       "sha256": "6b8e662792a1da4d2aa32c7f58a85d635b32f6d7e3b24f12f27d35bde9a7d90c"
     },
     {
       "path": "assets/silhalet-pilot.png",
-      "bytes": 11917984,
-      "sha256": "74d67d37e4f5ce63b5e4421ba235249d09e46ddc816d920f7f07337ae44a497c"
+      "storage": "site",
+      "storagePath": "assets/silhalet-pilot.png",
+      "url": "assets/silhalet-pilot.png",
+      "bytes": 11919067,
+      "sha256": "1295eca9bfd78a38259bbb7c1a79d8bad6fc76f63c80bd132d8ca8a7e327d409"
     },
     {
       "path": "assets/silnimet-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/silnimet-pilot.png",
+      "url": "assets/silnimet-pilot.png",
       "bytes": 12593222,
       "sha256": "430fa6fc17a5c08268825dd772287e023a13f1666eae4083f6d7f540bcc77ea4"
     },
     {
       "path": "assets/silteket-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/5ade0af115d7396a926fcad1e5c83b2d860e5227ab638b5b29f1f181ee9b43b1.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/5ade0af115d7396a926fcad1e5c83b2d860e5227ab638b5b29f1f181ee9b43b1.png",
       "bytes": 3454103,
       "sha256": "5ade0af115d7396a926fcad1e5c83b2d860e5227ab638b5b29f1f181ee9b43b1"
     },
     {
       "path": "assets/silverkeep-civic-quarter-a.png",
+      "storage": "site",
+      "storagePath": "assets/silverkeep-civic-quarter-a.png",
+      "url": "assets/silverkeep-civic-quarter-a.png",
       "bytes": 4593904,
       "sha256": "484fb5273a0d301d7d2746f74ff42fe197a291d3d48699ec49048517b300822a"
     },
     {
       "path": "assets/silverkeep-composite-4096-review.png",
+      "storage": "media",
+      "storagePath": "assets/b4f15cc428e3b7e2e9ef1ab51be808d9107e9d0704a0b286898b28d4d6f56b7f.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/b4f15cc428e3b7e2e9ef1ab51be808d9107e9d0704a0b286898b28d4d6f56b7f.png",
       "bytes": 49092686,
       "sha256": "b4f15cc428e3b7e2e9ef1ab51be808d9107e9d0704a0b286898b28d4d6f56b7f"
     },
     {
       "path": "assets/sorieiltor-detail-a.png",
+      "storage": "media",
+      "storagePath": "assets/b1e56b28c95a329f40df614c6b16b77f232e004d593332639bf6e3f59663c3d7.png",
+      "url": "https://raw.githubusercontent.com/musueman/vireth-atlas-media/main/assets/b1e56b28c95a329f40df614c6b16b77f232e004d593332639bf6e3f59663c3d7.png",
       "bytes": 3532164,
       "sha256": "b1e56b28c95a329f40df614c6b16b77f232e004d593332639bf6e3f59663c3d7"
     },
     {
       "path": "assets/sylvania-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/sylvania-pilot.png",
+      "url": "assets/sylvania-pilot.png",
       "bytes": 11931941,
       "sha256": "31342c867b8ce823409dd7c3c6c1903bbc8eb7efd0fd7e133b8ee1c710da4712"
     },
     {
       "path": "assets/tiris-northwest-connections-a.png",
+      "storage": "site",
+      "storagePath": "assets/tiris-northwest-connections-a.png",
+      "url": "assets/tiris-northwest-connections-a.png",
       "bytes": 2939440,
       "sha256": "022bcb563293ae0a161e0ff7c9c87b03fb6448a74192f7da51061bff8b61077b"
     },
     {
       "path": "assets/tiris-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/tiris-pilot.png",
+      "url": "assets/tiris-pilot.png",
       "bytes": 16739977,
       "sha256": "ad54617355b43ed0e7ac1d441072fe678147e70d1f77b85fef602b79324c09a1"
     },
     {
       "path": "assets/water-grain-road-a.png",
+      "storage": "site",
+      "storagePath": "assets/water-grain-road-a.png",
+      "url": "assets/water-grain-road-a.png",
       "bytes": 2895721,
       "sha256": "d9c1433c5d649de7dea06bf2cb0be6428390d1612eb29b2d41db08db1a057c30"
     },
     {
       "path": "assets/waterworks-pair-connections-a.png",
+      "storage": "site",
+      "storagePath": "assets/waterworks-pair-connections-a.png",
+      "url": "assets/waterworks-pair-connections-a.png",
       "bytes": 3271586,
       "sha256": "d1ccac08a927fb56b8695513148578cfca4e10d365eee2fe325206580b102511"
     },
     {
       "path": "assets/west-bank-south-road-a.png",
+      "storage": "site",
+      "storagePath": "assets/west-bank-south-road-a.png",
+      "url": "assets/west-bank-south-road-a.png",
       "bytes": 2918949,
       "sha256": "ea4fbf454c74c7d03c99635627d62cb0de170e25338738b4bda1d72a3acd9c9b"
     },
     {
       "path": "assets/western-gorge-detail-a.png",
+      "storage": "site",
+      "storagePath": "assets/western-gorge-detail-a.png",
+      "url": "assets/western-gorge-detail-a.png",
       "bytes": 3314523,
       "sha256": "77c68314d91abda875ad1b8234215ccefd78b03bd65b5b92c28300ccbdb670a4"
     },
     {
       "path": "assets/world-pilot.png",
-      "bytes": 7839622,
-      "sha256": "f1483da8ef6820d97fc95caf7841b4dd435cb369bf3c1630a5b0af7759de3a0b"
+      "storage": "site",
+      "storagePath": "assets/world-pilot.png",
+      "url": "assets/world-pilot.png",
+      "bytes": 7839539,
+      "sha256": "41f5a77f56f8f450b161b96dc782d07203f357e16ac5498214a580b9e8e2fcc8"
     },
     {
       "path": "assets/yenmebet-pilot.png",
+      "storage": "site",
+      "storagePath": "assets/yenmebet-pilot.png",
+      "url": "assets/yenmebet-pilot.png",
       "bytes": 18636224,
       "sha256": "36cdf6f69188a3feb885a48945a8782645ef5a3879a54eec17784da48ec893b8"
     }
