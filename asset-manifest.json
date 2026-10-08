@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-08T05:18:22.204725+00:00",
-  "sourceMasterSHA256": "3009e8b6f16797215f9254c307eb0bc4469b0541cb1a02f7eb8af951cf3bf78a",
+  "updatedAt": "2026-10-08T05:43:32.679082+00:00",
+  "sourceMasterSHA256": "98a978160c6456fe54482c021d8f01eeaa7409206ee9c7bf63f7f6b57939f580",
   "regionsReady": 19,
   "settlements": 106,
   "placesTotal": 166,
@@ -697,8 +697,8 @@
     },
     {
       "path": "assets/nimnaret-pilot.png",
-      "bytes": 12067984,
-      "sha256": "cf609e224fd3640dadb597637e75253b40a195bc31a1c0cf00b5857f7a1b47e3"
+      "bytes": 12073066,
+      "sha256": "6d1a071dd3cef3e4b0e8e4f102dfaa1ddc4104c37846e85bd01ab22e4d9c2470"
     },
     {
       "path": "assets/nimsolet-pilot.png",
@@ -812,8 +812,8 @@
     },
     {
       "path": "assets/world-pilot.png",
-      "bytes": 7839646,
-      "sha256": "e078857a0656f7dbaf1eeae3442534eefa97cf24df444e8e8ad0dbba61b18afb"
+      "bytes": 7839596,
+      "sha256": "7adf87dc18974096a521c843205925f97be12acab9e1c74c50603d30e3e72dae"
     },
     {
       "path": "assets/yenmebet-pilot.png",
