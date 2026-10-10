@@ -6,4 +6,6 @@
 
 main 변경은 GitHub Pages에 자동 배포됩니다. 이미지의 해상도와 내용은 내보낸 원본과 같습니다.
 
-국가·전역 등 59지도는 이 사이트에서, 거점 상세166장은 공개 `musueman/vireth-atlas-media` 저장소의 SHA-256 이름을 가진 원본 PNG에서 불러옵니다. `asset-manifest.json`에서 전체 이미지의 출처 URL·크기·SHA-256을 확인할 수 있습니다.
+국가·전역 등 59지도는 이 사이트에서, 거점 상세166장은 공개 `musueman/vireth-atlas-media` 저장소의 SHA-256 이름을 가진 무손실 WebP 완성본과 별도 미리보기에서 불러옵니다. `asset-manifest.json`에서 전체 이미지의 출처 URL·크기·SHA-256을 확인할 수 있습니다.
+
+완성본은 제작 PNG와 원래 해상도·RGBA 픽셀이 같습니다. 현재 선택 지도의 미리보기와 완성본만 요청하며 디코딩 후 표시합니다. 오류 시 재시도할 수 있습니다. manifest의 role은 full/preview를 구분하고 sourceSHA256은 보존된 제작 원본을 식별합니다.

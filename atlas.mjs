@@ -1,6 +1,10 @@
-import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=783458ebfb53dffc';
+import {createMapLoader} from './atlas-loader.mjs?v=808a293e417e9333';
+import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=808a293e417e9333';
 const $=id=>document.getElementById(id),ns='http://www.w3.org/2000/svg';
-const data=await fetch('data/facility-master.json?v=783458ebfb53dffc').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});
+let data;
+try{data=await fetch('data/facility-master.json?v=808a293e417e9333').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});}
+catch(error){$('loading').textContent='지도 자료를 불러오지 못했습니다. ';const retry=document.createElement('button');retry.textContent='다시 시도';retry.onclick=()=>location.reload();$('loading').append(retry);throw error;}
+const imageLoader=createMapLoader();
 $('production-status').textContent=`${data.maps.filter(m=>m.kind==='region'&&m.status==='ready').length}권역 ${data.maps.filter(m=>m.kind==='settlement'&&m.status==='ready').length}거점`;
 for(const stage of data.campaign.stages){const option=document.createElement('option');option.value=stage.id;option.textContent=stage.label;$('campaign-stage').append(option);}
 const nav=createNavigator(data.maps),map=$('map'),viewport=$('viewport');let depth=0,drag=null,ignoreClick=false;
@@ -13,7 +17,7 @@ function camera(){const s=nav.current(),b=s.bounds,w=b[2]/s.zoom,h=b[3]/s.zoom;m
 function showNote(text){$('selection').textContent=text;}
 function representedFeatures(s){return [...data.features.filter(f=>f.mapId===s.id),...(data.representations||[]).filter(r=>r.mapId===s.id).map(r=>({...data.features.find(f=>f.id===r.featureId),displayWorldAnchor:localToWorld(r.artworkAnchor,s.bounds)}))];}
 function selectFeature(f){nav.update({selected:f.id});for(const node of map.querySelectorAll('[data-feature-id]'))node.classList.toggle('selected',node.dataset.featureId===f.id);showNote(f.name+(nav.current().kind==='district'?' · 기존 기능과 새 세부 배치를 함께 보여주는 상세도입니다.'+(nav.current().id==='silverkeep-civic'?' 법정 계단은 보행 전용이며 마차는 광장 가장자리에서 승하차합니다.':''):' · 기능과 위치는 제작 상태표에서 구분합니다. 세부 건물 배치는 신규 설계입니다.'));}
-function open(id){if(ignoreClick)return;const target=data.maps.find(m=>m.id===id);if(!target)return;if(!nav.enter(id)){showNote(target.name+' · 상세 원화 준비 중입니다. 기존 그림을 확대한 대체 상세도는 제공하지 않습니다.');return;}depth++;history.pushState({atlasDepth:depth,mapId:id},'',`#${id}`);$('search').value='';render();}
+function open(id,paint=true){if(ignoreClick)return;const target=data.maps.find(m=>m.id===id);if(!target)return;if(!nav.enter(id)){showNote(target.name+' · 상세 원화 준비 중입니다. 기존 그림을 확대한 대체 상세도는 제공하지 않습니다.');return;}depth++;history.pushState({atlasDepth:depth,mapId:id},'',`#${id}`);$('search').value='';if(paint)render();}
 function back(){if(depth>0)history.back();}
 window.addEventListener('popstate',e=>{const wanted=e.state?.atlasDepth??0;if(wanted<depth){while(depth>wanted){nav.back();depth--;}}else if(wanted>depth&&e.state?.mapId&&nav.enter(e.state.mapId)){depth++;}render();});
 function polygonPath(g){if(!g)return '';const polys=g.type==='MultiPolygon'?g.coordinates:[g.coordinates];return polys.map(p=>p.map(r=>'M'+r.map(v=>v.join(',')).join('L')+'Z').join('')).join('');}
@@ -21,7 +25,17 @@ function interactive(node,id,name){node.setAttribute('tabindex','0');node.setAtt
 function label(x,y,text,size){return el('text',{x,y,'font-size':size,'stroke-width':size*.16,class:'map-label'},text);}
 function render(){
  const s=nav.current(),b=s.bounds;map.replaceChildren();map.setAttribute('aria-label',s.name+' 지도');map.dataset.mapId=s.id;map.dataset.asset=s.asset;
- const image=el('image',{href:mapAssetURL(s),x:b[0],y:b[1],width:b[2],height:b[3],preserveAspectRatio:'none'});$('loading').hidden=false;image.addEventListener('load',()=>{$('loading').hidden=true;});image.addEventListener('error',()=>{$('loading').textContent='그림을 불러오지 못했습니다. 새로고침해 주세요.';});map.append(image);
+ const image=el('image',{x:b[0],y:b[1],width:b[2],height:b[3],preserveAspectRatio:'none'});map.append(image);
+ const display=state=>{
+  if(map.dataset.mapId!==s.id||!image.isConnected)return;
+  map.dataset.loadState=state.phase;map.setAttribute('aria-busy',String(state.phase==='loading'||state.phase==='preview'));
+  if(state.url)image.setAttribute('href',state.url);else image.removeAttribute('href');
+  const status=$('loading');status.hidden=state.phase==='ready';status.replaceChildren();
+  if(state.phase==='ready')return;
+  status.append(document.createTextNode(s.name+(state.phase==='error'?' · 지도를 불러오지 못했습니다. ':state.phase==='preview'?' · 미리보기 표시 중 · 원본 해상도 불러오는 중…':' · 지도 불러오는 중…')));
+  if(state.phase==='error'){const retry=document.createElement('button');retry.textContent='다시 시도';retry.onclick=()=>imageLoader.select(mapAssetURL(s),s.previewAsset,display,true);status.append(retry);}
+ };
+ imageLoader.select(mapAssetURL(s),s.previewAsset,display);
  const fit=metrics().fit,fs=13/fit;
  for(const link of s.accessLinks||[]){
   const target=data.maps.find(m=>m.id===link.detailMapId),p=link.worldAnchor;if(!target||!p)continue;
@@ -91,7 +105,7 @@ function renderCampaign(s,fit,fs){
 }
 function destinationButton(name,status,action){const b=document.createElement('button');b.className='destination'+(status==='준비 중'?' planned':'');const t=document.createElement('strong');t.textContent=name;const statusText=document.createElement('span');statusText.textContent=status;b.append(t,statusText);b.onclick=action;return b;}
 function destinations(){const s=nav.current(),q=$('search').value.trim().toLocaleLowerCase();$('destinations').replaceChildren();
- if(q){$('list-title').textContent='장소 검색 결과';const matches=searchDestinations(data,q);for(const p of matches){const status=(p.kind==='region'?'국가·권역 · ':'')+(p.ready?'상세도':'준비 중');$('destinations').append(destinationButton(p.name,status,()=>{if(!p.ready){showNote(p.name+' · '+(p.kind==='region'?'국가·권역':'장소')+' 상세 원화 준비 중'+(p.kind==='place'?' / '+p.note:''));return;}while(nav.current().id!=='world'){nav.back();}depth=0;history.replaceState({atlasDepth:0,mapId:'world'},'','#world');for(const step of entryPath(data.maps,p.mapId))open(step);}));}if(!matches.length)$('destinations').textContent='해당 지명을 찾지 못했습니다.';return;}
+ if(q){$('list-title').textContent='장소 검색 결과';const matches=searchDestinations(data,q);for(const p of matches){const status=(p.kind==='region'?'국가·권역 · ':'')+(p.ready?'상세도':'준비 중');$('destinations').append(destinationButton(p.name,status,()=>{if(!p.ready){showNote(p.name+' · '+(p.kind==='region'?'국가·권역':'장소')+' 상세 원화 준비 중'+(p.kind==='place'?' / '+p.note:''));return;}while(nav.current().id!=='world'){nav.back();}depth=0;history.replaceState({atlasDepth:0,mapId:'world'},'','#world');for(const step of entryPath(data.maps,p.mapId))open(step,false);render();}));}if(!matches.length)$('destinations').textContent='해당 지명을 찾지 못했습니다.';return;}
  $('list-title').textContent=s.kind==='settlement'?'시설·생활 공간':'다음 상세도';
  if(s.kind==='settlement'||s.kind==='district'){for(const child of data.maps.filter(m=>m.parentMapId===s.id))$('destinations').append(destinationButton(child.name,'상세 구획',()=>open(child.id)));for(const f of representedFeatures(s))$('destinations').append(destinationButton(f.name,'위치',()=>selectFeature(f)));if(s.kind==='district')$('list-title').textContent='시설과 출입 동선';if(s.id==='silverkeep-civic'){const note=document.createElement('p');note.textContent='금색: 마차 접근 · 청록 점선: 보행. 광장 승하차 후 법정 계단은 걸어서 이동합니다. 지명을 끄면 동선 표시도 숨깁니다.';$('destinations').append(note);}}
  else if(s.kind==='campaign'){$('list-title').textContent='협곡과 전황';$('destinations').textContent='북쪽 좁은목 → 중앙 골짜기 → 남쪽 접근로. 위 전황 선택기에서 사건 단계를 바꿀 수 있습니다. 부대의 정확한 봉쇄 수단과 듀란의 탈출 경로는 정해지지 않았습니다.';}
