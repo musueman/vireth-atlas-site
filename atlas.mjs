@@ -1,10 +1,10 @@
-import {createAssetCache,nextMapAssets} from './atlas-prefetch.mjs?v=4f810c35346dcbf0';
-import {createMapLoader} from './atlas-loader.mjs?v=4f810c35346dcbf0';
-import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=4f810c35346dcbf0';
+import {createAssetCache,nextMapAssets} from './atlas-prefetch.mjs?v=5c025c23680f3932';
+import {createMapLoader} from './atlas-loader.mjs?v=5c025c23680f3932';
+import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=5c025c23680f3932';
 const $=id=>document.getElementById(id),ns='http://www.w3.org/2000/svg';
 let data;
-try{data=await fetch('data/facility-master.json?v=4f810c35346dcbf0').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});}
-catch(error){$('loading').textContent='지도 자료를 불러오지 못했습니다. ';const retry=document.createElement('button');retry.textContent='다시 시도';retry.onclick=()=>location.reload();$('loading').append(retry);throw error;}
+try{data=await fetch('data/facility-master.json?v=5c025c23680f3932').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});}
+catch(error){window.AtlasIntro?.fail('지도 자료를 불러오지 못했습니다.');$('loading').textContent='지도 자료를 불러오지 못했습니다. ';const retry=document.createElement('button');retry.textContent='다시 시도';retry.onclick=()=>location.reload();$('loading').append(retry);throw error;}
 const assetCache=createAssetCache(),imageLoader=createMapLoader({assetCache});
 const connection=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
 const updateNetwork=()=>assetCache.setNetwork(connection);updateNetwork();connection?.addEventListener?.('change',updateNetwork);
@@ -42,16 +42,21 @@ function render(){
  if(prefetchSelection!==mapAssetURL(s)){prefetchSelection=mapAssetURL(s);assetCache.activate(prefetchSelection);$('prefetch').hidden=true;$('prefetch').dataset.context=s.id;}
  map.replaceChildren();map.setAttribute('aria-label',s.name+' 지도');map.dataset.mapId=s.id;map.dataset.asset=s.asset;
  const image=el('image',{x:b[0],y:b[1],width:b[2],height:b[3],preserveAspectRatio:'none'});map.append(image);
+ const retryFirstMap=()=>imageLoader.select(mapAssetURL(s),s.previewAsset,display,true);
+ window.AtlasIntro?.setRetry(retryFirstMap);
  const display=state=>{
   if(map.dataset.mapId!==s.id||!image.isConnected)return;
   map.dataset.loadState=state.phase;map.setAttribute('aria-busy',String(state.phase==='loading'||state.phase==='preview'));
   if(state.url)image.setAttribute('href',state.url);else image.removeAttribute('href');
   const status=$('loading');status.hidden=state.phase==='ready';status.replaceChildren();
   if(state.phase==='ready'){
+   if(window.AtlasIntro)window.AtlasIntro.ready();else document.getElementById('atlas-intro')?.remove();
    // Give the selected image a paint opportunity before starting low-priority work.
    requestAnimationFrame(()=>requestAnimationFrame(()=>{if(map.dataset.mapId===s.id&&image.isConnected)assetCache.prepare(s.id,nextMapAssets(data.maps,s,nav.breadcrumb().map(m=>m.id)),prefetchStatus);}));
    return;
   }
+  if(state.phase==='error')window.AtlasIntro?.fail(s.name+' 지도를 불러오지 못했습니다.');
+  else window.AtlasIntro?.stage(s.name+' 지도를 펼치는 중…',state.phase==='preview'?'미리보기가 준비됐습니다. 원래 해상도를 불러옵니다.':'지도 그림을 불러오고 있습니다.',state.phase==='preview'?'preview':'map');
   status.append(document.createTextNode(s.name+(state.phase==='error'?' · 지도를 불러오지 못했습니다. ':state.phase==='preview'?' · 미리보기 표시 중 · 원본 해상도 불러오는 중…':' · 지도 불러오는 중…')));
   if(state.phase==='error'){const retry=document.createElement('button');retry.textContent='다시 시도';retry.onclick=()=>imageLoader.select(mapAssetURL(s),s.previewAsset,display,true);status.append(retry);}
  };
