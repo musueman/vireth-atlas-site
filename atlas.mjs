@@ -1,10 +1,24 @@
-import {createMapLoader} from './atlas-loader.mjs?v=76aaec783927634c';
-import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=76aaec783927634c';
+import {createAssetCache,nextMapAssets} from './atlas-prefetch.mjs?v=4f810c35346dcbf0';
+import {createMapLoader} from './atlas-loader.mjs?v=4f810c35346dcbf0';
+import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=4f810c35346dcbf0';
 const $=id=>document.getElementById(id),ns='http://www.w3.org/2000/svg';
 let data;
-try{data=await fetch('data/facility-master.json?v=76aaec783927634c').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});}
+try{data=await fetch('data/facility-master.json?v=4f810c35346dcbf0').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});}
 catch(error){$('loading').textContent='지도 자료를 불러오지 못했습니다. ';const retry=document.createElement('button');retry.textContent='다시 시도';retry.onclick=()=>location.reload();$('loading').append(retry);throw error;}
-const imageLoader=createMapLoader();
+const assetCache=createAssetCache(),imageLoader=createMapLoader({assetCache});
+const connection=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
+const updateNetwork=()=>assetCache.setNetwork(connection);updateNetwork();connection?.addEventListener?.('change',updateNetwork);
+$('prefetch-toggle').onclick=()=>assetCache.setPaused(!assetCache.stats().paused);
+function prefetchStatus(state){
+ if(state.context!==nav.current().id)return;
+ const line=$('prefetch');line.hidden=!state.available;line.dataset.context=state.context;
+ line.dataset.ready=state.ready;line.dataset.total=state.total;line.dataset.failed=state.failed;line.dataset.cacheBytes=state.bytes;line.dataset.budget=state.budget;
+ const reason=state.networkReason||(state.paused?'일시 중지':'');
+ $('prefetch-status').textContent=reason?`다음 지도 준비 · ${reason}`:`다음 지도 ${state.done?'준비 종료':'준비 중'} ${state.ready}/${state.total}${state.failed?` · 실패 ${state.failed} (선택하면 재시도)`:''}${state.skipped?` · ${state.skipped}개는 선택 시 불러오기`:''}`;
+ $('prefetch-toggle').textContent=state.paused?'재개':'중지';$('prefetch-toggle').disabled=!!state.networkReason;
+}
+let prefetchSelection=null;
+window.addEventListener('pagehide',()=>assetCache.dispose());
 $('production-status').textContent=`${data.maps.filter(m=>m.kind==='region'&&m.status==='ready').length}권역 ${data.maps.filter(m=>m.kind==='settlement'&&m.status==='ready').length}거점`;
 for(const stage of data.campaign.stages){const option=document.createElement('option');option.value=stage.id;option.textContent=stage.label;$('campaign-stage').append(option);}
 const nav=createNavigator(data.maps),map=$('map'),viewport=$('viewport');let depth=0,drag=null,ignoreClick=false;
@@ -24,14 +38,20 @@ function polygonPath(g){if(!g)return '';const polys=g.type==='MultiPolygon'?g.co
 function interactive(node,id,name){node.setAttribute('tabindex','0');node.setAttribute('role','button');node.setAttribute('aria-label',name);node.append(el('title',{},name));node.addEventListener('click',()=>open(id));node.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(id);}});for(const event of ['mouseenter','focus'])node.addEventListener(event,()=>{$('tooltip').textContent=name;$('tooltip').hidden=false;});for(const event of ['mouseleave','blur'])node.addEventListener(event,()=>{$('tooltip').hidden=true;});}
 function label(x,y,text,size){return el('text',{x,y,'font-size':size,'stroke-width':size*.16,class:'map-label'},text);}
 function render(){
- const s=nav.current(),b=s.bounds;map.replaceChildren();map.setAttribute('aria-label',s.name+' 지도');map.dataset.mapId=s.id;map.dataset.asset=s.asset;
+ const s=nav.current(),b=s.bounds;
+ if(prefetchSelection!==mapAssetURL(s)){prefetchSelection=mapAssetURL(s);assetCache.activate(prefetchSelection);$('prefetch').hidden=true;$('prefetch').dataset.context=s.id;}
+ map.replaceChildren();map.setAttribute('aria-label',s.name+' 지도');map.dataset.mapId=s.id;map.dataset.asset=s.asset;
  const image=el('image',{x:b[0],y:b[1],width:b[2],height:b[3],preserveAspectRatio:'none'});map.append(image);
  const display=state=>{
   if(map.dataset.mapId!==s.id||!image.isConnected)return;
   map.dataset.loadState=state.phase;map.setAttribute('aria-busy',String(state.phase==='loading'||state.phase==='preview'));
   if(state.url)image.setAttribute('href',state.url);else image.removeAttribute('href');
   const status=$('loading');status.hidden=state.phase==='ready';status.replaceChildren();
-  if(state.phase==='ready')return;
+  if(state.phase==='ready'){
+   // Give the selected image a paint opportunity before starting low-priority work.
+   requestAnimationFrame(()=>requestAnimationFrame(()=>{if(map.dataset.mapId===s.id&&image.isConnected)assetCache.prepare(s.id,nextMapAssets(data.maps,s,nav.breadcrumb().map(m=>m.id)),prefetchStatus);}));
+   return;
+  }
   status.append(document.createTextNode(s.name+(state.phase==='error'?' · 지도를 불러오지 못했습니다. ':state.phase==='preview'?' · 미리보기 표시 중 · 원본 해상도 불러오는 중…':' · 지도 불러오는 중…')));
   if(state.phase==='error'){const retry=document.createElement('button');retry.textContent='다시 시도';retry.onclick=()=>imageLoader.select(mapAssetURL(s),s.previewAsset,display,true);status.append(retry);}
  };
