@@ -1,8 +1,8 @@
-import {createMapLoader} from './atlas-loader.mjs?v=808a293e417e9333';
-import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=808a293e417e9333';
+import {createMapLoader} from './atlas-loader.mjs?v=76aaec783927634c';
+import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=76aaec783927634c';
 const $=id=>document.getElementById(id),ns='http://www.w3.org/2000/svg';
 let data;
-try{data=await fetch('data/facility-master.json?v=808a293e417e9333').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});}
+try{data=await fetch('data/facility-master.json?v=76aaec783927634c').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});}
 catch(error){$('loading').textContent='지도 자료를 불러오지 못했습니다. ';const retry=document.createElement('button');retry.textContent='다시 시도';retry.onclick=()=>location.reload();$('loading').append(retry);throw error;}
 const imageLoader=createMapLoader();
 $('production-status').textContent=`${data.maps.filter(m=>m.kind==='region'&&m.status==='ready').length}권역 ${data.maps.filter(m=>m.kind==='settlement'&&m.status==='ready').length}거점`;
