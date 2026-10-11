@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>비레스 지도 · 시설 상세도 작업본</title><link rel="stylesheet" href="atlas.css?v=5c025c23680f3932"></head>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>비레스 지도 · 시설 상세도 작업본</title><link rel="stylesheet" href="atlas.css?v=46afc3b71d70ac8e"></head>
 <body><div id="atlas-app"><header><div><p class="eyebrow">VIRETH · ATLAS</p><h1>비레스 지도</h1></div><div class="stage"><strong>시설 상세도 작업본</strong><span id="production-status">20권역 166거점</span></div></header>
 <nav id="breadcrumbs" aria-label="현재 지도 경로"></nav>
 <section class="campaign-panel" aria-label="티리스 전황"><label for="campaign-stage">5083 티리스 전황</label><select id="campaign-stage"><option value="none">사건 표시 끄기</option></select><p id="campaign-summary" hidden></p></section>
@@ -17,9 +17,10 @@
 <g fill="currentColor" font-size="10" text-anchor="middle" font-family="Georgia,serif"><text x="160" y="20">N</text><text x="160" y="313">S</text><text x="13" y="164">W</text><text x="307" y="164">E</text></g></svg>
 <h2 id="intro-title" tabindex="-1">비레스</h2><p class="intro-tagline">산맥 너머, 아직 펼치지 않은 세계</p>
 <div class="intro-loading" role="status" aria-live="polite" aria-atomic="true"><p id="intro-status">지도 자료를 불러오는 중…</p><p id="intro-detail">잠시 후 선택한 지도가 펼쳐집니다.</p></div>
-<div class="intro-track" aria-hidden="true"><span></span></div>
+<div class="intro-progress-label"><span id="intro-progress-label">시작 연출</span><span id="intro-percent" aria-hidden="true">0%</span></div>
+<div id="intro-progress" class="intro-track" role="progressbar" aria-labelledby="intro-progress-label" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-live="off"><span id="intro-fill"></span></div>
 <div class="intro-steps" aria-hidden="true"><span data-intro-step="data" aria-current="step">자료</span><i></i><span data-intro-step="map">지도</span><i></i><span data-intro-step="preview">선명하게</span></div>
 <div class="intro-actions"><a id="intro-retry" href="">다시 시도</a><a id="intro-leave" href="#intro-bypass">지도 화면으로 나가기 <span aria-hidden="true">↗</span></a></div>
 <noscript><p class="intro-noscript">지도를 탐색하려면 JavaScript가 필요합니다. 브라우저에서 허용한 뒤 다시 시도해 주세요.</p></noscript>
 </div><p class="intro-footnote" aria-hidden="true">THE WORLD UNFOLDS</p></section>
-<script src="atlas-intro.js?v=5c025c23680f3932"></script><script id="atlas-module" type="module" src="atlas.mjs?v=5c025c23680f3932"></script></body></html>
+<script src="atlas-intro.js?v=46afc3b71d70ac8e"></script><script id="atlas-module" type="module" src="atlas.mjs?v=46afc3b71d70ac8e"></script></body></html>

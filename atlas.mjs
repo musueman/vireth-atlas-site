@@ -1,9 +1,9 @@
-import {createAssetCache,nextMapAssets} from './atlas-prefetch.mjs?v=5c025c23680f3932';
-import {createMapLoader} from './atlas-loader.mjs?v=5c025c23680f3932';
-import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=5c025c23680f3932';
+import {createAssetCache,nextMapAssets} from './atlas-prefetch.mjs?v=46afc3b71d70ac8e';
+import {createMapLoader} from './atlas-loader.mjs?v=46afc3b71d70ac8e';
+import {createNavigator,visibleLabelIndexes,entryPath,localToWorld,searchDestinations,campaignLayer,mapAssetURL} from './atlas-core.mjs?v=46afc3b71d70ac8e';
 const $=id=>document.getElementById(id),ns='http://www.w3.org/2000/svg';
 let data;
-try{data=await fetch('data/facility-master.json?v=5c025c23680f3932').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});}
+try{data=await fetch('data/facility-master.json?v=46afc3b71d70ac8e').then(r=>{if(!r.ok)throw Error('지도 자료를 읽을 수 없습니다.');return r.json();});}
 catch(error){window.AtlasIntro?.fail('지도 자료를 불러오지 못했습니다.');$('loading').textContent='지도 자료를 불러오지 못했습니다. ';const retry=document.createElement('button');retry.textContent='다시 시도';retry.onclick=()=>location.reload();$('loading').append(retry);throw error;}
 const assetCache=createAssetCache(),imageLoader=createMapLoader({assetCache});
 const connection=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
