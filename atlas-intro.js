@@ -52,12 +52,13 @@
  function dismiss(){
   if(closed)return;closed=true;stopProgress();clearTimeout(watchdog);
   const ownedFocus=layer.contains(document.activeElement);
+  app.classList.add('desk-entered');
   app.inert=false;document.documentElement.classList.remove('intro-open');
   layer.classList.add('intro-leaving');layer.setAttribute('aria-hidden','true');layer.inert=true;
   if(ownedFocus){const target=previousFocus!==document.body&&previousFocus?.isConnected?previousFocus:document.getElementById('current-title');target?.focus({preventScroll:true});}
   const finish=()=>{layer.hidden=true;};
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)finish();
-  else{layer.addEventListener('transitionend',finish,{once:true});setTimeout(finish,280);}
+  else{layer.addEventListener('transitionend',finish,{once:true});setTimeout(finish,800);}
   window.removeEventListener('error',handleError,true);window.removeEventListener('unhandledrejection',handleRejection);
   document.removeEventListener('visibilitychange',resetFrameClock);
  }
